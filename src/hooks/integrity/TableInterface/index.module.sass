@@ -1,0 +1,45 @@
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  height: 100%
+  width: 100%
+  >header
+    display: flex
+    margin-bottom: 8px
+    .query
+      flex: 1
+  .tools
+    position: relative
+    display: flex
+    margin-bottom: 8px
+    .toolsLeft
+      flex: 1
+  .outerContent
+    position: relative
+    flex: 1
+    display: flex
+    overflow: hidden
+    .tableContentBox
+      position: relative
+      flex: 1
+      overflow: hidden
+      display: flex
+      flex-direction: column
+      .tableContent
+        position: relative
+        flex: 1
+        overflow: hidden
+      .contentCard
+        position: relative
+        flex: 1
+        overflow-x: hidden
+        overflow-y: auto
+      >footer
+        position: relative
+        display: flex
+        .footerTools
+          margin: 8px 0
+          flex: 1
+        .footerPagination
+          margin: 8px 0

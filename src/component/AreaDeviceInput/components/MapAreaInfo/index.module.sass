@@ -1,0 +1,58 @@
+@import "themeVariable"
+
+.wrapper
+  position: relative
+
+.map
+  position: relative
+  z-index: 9
+  top: 0
+  left: 0
+  height: 700px
+
+.box
+  position: absolute
+  z-index: 19
+  top: 8px
+  left: 8px
+  width: 500px
+  height: 300px
+  background-color: $background-color2
+  >header
+    display: flex
+    height: 34px
+    .type
+      width: 200px
+    .deviceList
+      flex: 1
+  >section
+    height: calc( 100% - 34px )
+    overflow-y: auto
+
+.selected
+  display: flex
+  height: 30px
+  line-height: 30px
+  color: $text-color
+
+.name
+  flex: 1
+  text-indent: 8px
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+
+.typeName
+  width: 120px
+
+.delete
+  width: 80px
+
+.footer
+  position: absolute
+  z-index: 19
+  top: 10px
+  right: 60px
+  padding: 4px 8px
+  background-color: $background-color-opacity90
+  color: $text-color

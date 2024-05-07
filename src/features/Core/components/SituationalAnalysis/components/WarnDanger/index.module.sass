@@ -1,0 +1,103 @@
+@import "themeVariable"
+
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  >section
+    flex: 1
+    overflow-x: hidden
+    overflow-y: auto
+
+.checkboxGroup
+  flex-wrap: wrap
+
+.checkbox
+  display: inline-block
+  margin-right: 8px
+
+.statisticBox
+  position: relative
+
+.statistic
+  padding-top: 16px
+
+.cardTitle
+  padding-right: 8px
+
+.dateSelect
+  display: flex
+  margin-bottom: 4px
+
+.selectSimple
+  width: auto
+
+.dateLabel
+  color: $text-color4
+
+.dateBox
+  display: flex
+  flex: 1
+
+.dateGroup
+  flex: 1
+
+.optionLabel
+  padding-right: 8px
+
+.statisticBox
+  position: relative
+  display: flex
+
+.statisticCard
+  display: flex
+  margin-left: 8px
+  height: 50px
+  background-position: 0 0
+  background-image: url(~images/popup/panel_bk.png)
+  background-size: 100% 100%
+  &:nth-child(1)
+    flex: 1
+    margin-left: 0
+    .statisticPanel
+      padding: 0
+    .statisticIconAis
+      background-image: url(~images/popup/alarm.png)
+
+.statisticIconAis
+  width: 40px
+  height: 50px
+  background-repeat: no-repeat
+  background-position: center center
+
+.statisticPanel
+  padding: 0 20px
+
+.statisticLabel
+  height: 25px
+  line-height: 28px
+  font-size: 12px
+  color: $text-color2
+  white-space: nowrap
+
+.statisticValue
+  height: 25px
+  line-height: 22px
+  font-size: 18px
+  font-weight: bolder
+  color: $text-color4
+
+.groupCardHeader
+  display: flex
+  height: 30px
+  line-height: 30px
+
+.groupCardTitle
+  flex: 1
+  color: $text-color2
+
+.checkboxText
+  width: 68px
+  color: $text-color

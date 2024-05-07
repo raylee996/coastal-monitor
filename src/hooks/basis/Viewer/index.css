@@ -1,0 +1,7 @@
+.Viewer__imgList__item .ant-image,
+.Viewer__videoList__item .ant-image,
+.Viewer__imgList__item img
+.Viewer__videoList__item img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,84 @@
+@import "src"
+.wrapper
+  height: 100%
+  overflow-y: auto
+  overflow-x: hidden
+  padding: 0 10px
+  box-sizing: border-box
+
+.actionGroup button
+  margin-right: 10px
+
+.modelTitle
+  height: 34px
+  line-height: 34px
+  padding-left: 4px
+  margin-bottom: 6px
+
+.action
+  display: flex
+  justify-content: space-between
+  padding-right: 20px
+
+.top
+  width: 100%
+  display: flex
+  margin-bottom: 40px
+
+.modelDetail
+  width: 100%
+
+.iconColor
+  color: #59bdff
+  margin-right: 6px
+  font-size: 14px
+.bottom
+  .search
+    display: flex
+  .modelList
+    width: 100%
+    min-height: 634px
+    margin-right: 10px
+    margin-top: 20px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    color: #ffffff
+    font-size: 14px
+    .modelItems
+      flex: 1
+      box-sizing: border-box
+
+
+
+.modelAddShow
+  animation: addShow 0.8s
+  overflow: hidden
+  flex: 1
+
+@keyframes addShow
+   0%
+     transform: scale(0.8)
+   100%
+     transform: scale(1)
+
+.modelAddHidden
+  animation: addHide 0.5s
+  overflow: hidden
+  flex: 1
+
+@keyframes addHide
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0)
+
+.detailBtn
+  margin-right: 4px
+  color: #00edfe
+  cursor: pointer
+.textEllipsis
+  width: 250px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis

@@ -1,0 +1,38 @@
+$cols: 3 // 列数
+$marginWidth: 10px // 间隔
+
+@import utils
+
+.wrapper
+  width: calc((100% - #{($cols - 1) * $marginWidth}) / #{$cols})
+  height: 30%
+  box-sizing: border-box
+  font-size: 14px
+  margin-bottom: 10px
+  margin-right: $marginWidth
+  padding: 16px 10px
+  background-color: rgba(10, 45, 80, 1)
+  color: #a6cdff
+  display: flex
+  align-items: stretch
+  .imgBox
+    margin-top: 4px
+    width: 48%
+    display: flex
+    flex-direction: column
+    .smallImg
+      height: 40px
+    .bigImg
+      height: 90px
+      margin-top: 4px
+  .content
+    width: 52%
+    height: 100%
+    padding: 10px 0 10px 20px
+    box-sizing: border-box
+    .text
+      line-height: 32px
+      @extend .textEllipsis
+
+.delMarginLeft
+  margin-right: 0

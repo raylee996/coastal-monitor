@@ -1,0 +1,32 @@
+.box
+  height: 100%
+  flex: 1
+  display: flex
+  .right
+    width: 50%
+    height: 100%
+    margin-right: 8px
+    &:last-child
+      margin-right: 0
+    li
+      margin-bottom: 10px
+      cursor: pointer
+      transition: 0.3s
+      &:hover
+        color: #40a9ff
+      .sourceSrc
+        width: 98%
+        height: 136px
+        border: solid 1px #0a6eab
+        transition: 0.3s
+        object-fit: cover
+        &:hover
+          border: solid 1px #40a9ff
+      .sourceSrcTitle
+        color: #a6cdff
+        text-align: center
+        margin-top: 0
+        margin-bottom: 20px
+
+.listBox
+  height: calc( 100% - 46px )

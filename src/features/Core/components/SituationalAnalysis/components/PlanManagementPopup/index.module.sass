@@ -1,0 +1,44 @@
+@import "themeVariable"
+
+.wrapper
+  width: 100%
+  color: #fff
+  font-size: 14px
+  .commonPad
+    padding: 0 10px
+  .label
+    display: flex
+    line-height: 40px
+    font-size: 15px
+    background: #0e376e
+    @extend .commonPad
+    .labelRound
+      width: 12px
+      height: 12px
+      border-radius: 6px
+      margin-top: 14px
+      margin-right: 10px
+      background: #fff
+    .labelText
+      font-weight: bolder
+      color: transparent
+      background: linear-gradient(to bottom, #fff 0%, #fff 20%, #59bdff 100%)
+      -webkit-background-clip: text
+      background-clip: text
+  .content
+    @extend .commonPad
+    line-height: 24px
+    .contentItem
+      display: flex
+      .timeLable
+        color: $text-color
+        width: 98px
+      .descLable
+        @extend .timeLable
+        width: 70px
+      .itemText
+        flex: 1
+  .btnBox
+    padding: 0 8px
+    display: flex
+    justify-content: space-between

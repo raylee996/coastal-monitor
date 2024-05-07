@@ -1,0 +1,182 @@
+@import "src/themeVariable"
+.wrapper
+    width: 100%
+    height: 100%
+    flex-direction: column
+    overflow: auto
+.videoWrapper
+    width: 100%
+    height: calc( 100% - 90px )
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    flex: 1
+    resize: both
+.videoRef
+    width: 100%
+    height: 100%
+    object-fit: fill
+.checkBoxTime
+    display: flex
+    align-items: center
+    margin: 4px 0
+    justify-content: space-between
+    .timeCount
+        position: relative
+        .time
+            position: absolute
+            top: -26px
+            right: 10px
+            color: #fff
+            font-size: 14px
+
+.controlAction
+    display: flex
+    align-items: center
+    font-size: 14px
+    background: rgba(14, 90, 155, 0.58)
+    height: 40px
+    width: 100%
+    padding: 0 4px
+    box-sizing: border-box
+    position: relative
+    .cloudControlBtn
+        color: #00f0fe
+        cursor: pointer
+    .historyVideoBtn
+        color: #00f0fe
+        margin-right: 10px
+        cursor: pointer
+    .targetInfos
+        flex: 1
+        min-width: 190px
+        font-size: 12px
+        .speed
+            span
+                margin-right: 10px
+.icons
+    display: flex
+    width: 60px
+    height: 100%
+    img
+        width: 20px
+        cursor: pointer
+        margin-right: 10px
+
+.activeVideo
+    border: solid 2px #f35d08
+    box-sizing: border-box
+.activeBtn
+    font-weight: bold
+    background-image: -webkit-linear-gradient(bottom, #f35d08, #ffffff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+//录制视频
+.recordVideo
+    position: absolute
+    top: 4px
+    right: 10px
+    z-index: 20
+    background: rgba(0,0,0,0.7)
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 4px 14px
+    color: #eeeeee
+    font-size: 14px
+    border-radius: 20px
+.stopVideo
+    width: 14px
+    height: 14px
+    display: inline-block
+    background: red
+    margin-right: 8px
+.takeSuccess
+    position: absolute
+    top: -50px
+    width: 200px
+    z-index: 9999
+
+.closeAlt
+    position: absolute
+    top: 8px
+    left: 8px
+    padding: 4px 8px
+    font-size: 18px
+    color: #fff
+    background-color: rgb(0 0 0 / 50%)
+    opacity: 0
+    animation: closeAltAn 1s forwards 4s
+    z-index: 999
+
+@keyframes closeAltAn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+.fullScreenControlTools
+    background: rgba(0, 0, 0, 0.2 )
+    position: absolute
+    right: 10px
+    bottom: 10px
+    z-index: 20
+    padding-top: 30px
+    width: 480px
+    height: 240px
+    user-select: none
+.fullScreenIcons
+    position: absolute
+    left: 80px
+    top: 0
+    width: 60px
+    height: 36px
+    display: flex
+    justify-items: center
+    z-index: 999
+    img
+        width: 20px
+        cursor: pointer
+        margin-right: 10px
+
+.title
+    color: #fff
+    position: absolute
+    left: 0
+    top: 0
+    height: 36px
+    line-height: 36px
+    width: 100%
+    padding-left: 6px
+    box-sizing: border-box
+    background: rgba(14, 55, 110, 0.2)
+    cursor: move
+    display: flex
+    span
+        margin-right: 20px
+
+.wrapper
+    padding: 0!important
+
+.locationBox
+    position: absolute
+    z-index: 19
+    top: 0
+    left: 0
+    right: 0
+    bottom: 24px
+
+.location
+    position: absolute
+    z-index: 9
+    background-color: $background-color-opacity
+    border: $border
+
+.showMaxHeight
+    max-height: 204px
+.seizeTimeSelect
+    display: flex
+    align-items: center
+.videoWinControl
+    padding: 10px

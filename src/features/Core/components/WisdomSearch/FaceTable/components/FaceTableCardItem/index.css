@@ -1,0 +1,9 @@
+.addRadioStyle,
+.addRadioStyle:hover {
+  background: #e6f4ff !important;
+  border-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.addRadioStyle .ant-table-tbody tr.ant-table-row-selected:hover td {
+  background: #e6f4ff !important;
+}

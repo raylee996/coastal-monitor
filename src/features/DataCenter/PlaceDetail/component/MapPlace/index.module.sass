@@ -1,0 +1,52 @@
+@import 'src/themeVariable'
+.wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    .title
+        display: flex
+        align-items: center
+        color: #a6cdff
+        .titleItem
+            height: 32px
+            line-height: 32px
+            margin-right: 4px
+        .txt
+            font-size: 12px
+            margin-right: 16px
+        .btnColor
+            margin-right: 16px
+    .tips
+        padding: 4px
+        font-size: 14px
+    .mapBox
+        height: 420px
+        position: relative
+        .map
+            position: relative
+            z-index: 9
+            width: 100%
+            height: 100%
+            // right: 70px
+        .markIcon
+            position: absolute
+            top: 14px
+            left: 13px
+            z-index: 1000
+            height: 30px
+            // width: 30px
+            border-radius: 2px
+            background-color: #fff
+            img
+                margin: 3px
+.actions
+    position: absolute
+    z-index: 19
+    bottom: 0
+    left: 50%
+    padding: 10px
+    background-color: $background-color2
+    transform: translate(-50%, 0)
+.deviceName
+    color: #a6cdff
+    padding-left: 10px

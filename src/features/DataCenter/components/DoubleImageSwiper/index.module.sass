@@ -1,0 +1,29 @@
+@import "themeVariable"
+
+.wrapper
+  position: relative
+  >header
+    margin-bottom: 10px
+
+.label
+  line-height: 32px
+  color: $text-color
+
+.carousel
+  position: relative
+
+.doButton
+  position: absolute !important
+  top: 30%
+
+.prev
+  @extend  .doButton
+  left: 0
+
+.next
+  @extend  .doButton
+  right: 0
+
+.spinBox
+  text-align: center
+  line-height: 100px

@@ -1,0 +1,55 @@
+@import utils
+
+.wrapper
+  position: relative
+  display: flex
+  flex-direction: column
+  height: 100%
+  padding: 0 20px 20px 20px
+  box-sizing: border-box
+  .infoBox
+    line-height: 40px
+    .col
+      display: flex
+      border-bottom: solid 1px #08213c
+      box-sizing: border-box
+      .colLabel
+        width: 32%
+        text-align: right
+        background-color: #09457a
+        color: #fff
+      .colText
+        width: 68%
+        background-color: #052440
+        border: solid 1px #08213c
+        padding-left: 10px
+  .box
+    margin-top: 32px
+    flex: 1
+    @extend .flexBetween
+    align-items: stretch
+    .mapBox
+      width: 49%
+      .drawMap
+        height: calc(100% - 32px)
+    .content
+      width: 49%
+      line-height: 40px
+      .labelRow
+        color: #fff
+        text-align: center
+        background-color: #0b579d
+      .content_padding
+        padding: 5px 0
+      .contentRow
+        @extend .content_padding
+        background-color: rgba(14,55,110, .6)
+      .InterlacedRow
+        @extend .content_padding
+        background-color: #0b2c4f
+      .text
+        text-align: center
+      .face
+        width: 36px
+        height: 36px
+        margin-right: 4px

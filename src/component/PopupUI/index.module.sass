@@ -1,0 +1,39 @@
+.headerWrapper
+  position: relative
+  margin-left: 10px
+  margin-right: 10px
+  margin-top: 20px
+  height: 42px
+
+.headerContent
+  position: relative
+  z-index: 6
+  height: 40px
+  line-height: 42px
+  user-select: none
+  >img
+    margin: 0 4px
+    vertical-align: middle
+  >span
+    font-size: 16px
+    font-weight: bolder
+    background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+  >div
+    float: right
+    width: 40px
+    height: 40px
+    line-height: 40px
+    font-size: 18px
+    color: #59bdff
+    text-align: center
+    cursor: pointer
+    user-select: none
+    &:hover
+      font-size: 16px
+
+.contentWrapper
+  padding: 10px
+  height: calc( 100% - 62px )
+  box-sizing: border-box

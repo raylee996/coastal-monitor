@@ -1,0 +1,82 @@
+@import "src/themeVariable"
+.active
+  background-image: url(~images/commonBox/active.png)
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  color: #fff
+  .topLeft
+    background: linear-gradient(to bottom, #fff 0%, #ff5500 100%)
+    -webkit-background-clip: text
+    color: transparent
+  .middle
+    border-bottom: dashed 1px #d87707
+.unActive
+  background-image: url(~images/commonBox/default.png)
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  .topLeft
+    background: linear-gradient(to bottom, #fff 0%, #59bdff 100%)
+    -webkit-background-clip: text
+    color: transparent
+
+.wrapperItem
+  width: 100%
+  min-height: 80px
+  height: auto
+  overflow: hidden
+  box-sizing: border-box
+  padding: 10px 10px 16px
+  margin-bottom: 10px
+  position: relative
+.top,.middle
+  display: flex
+  justify-content: space-between
+.topRight
+  color: $text-color
+  font-size: 12px
+.topLeft
+  font-size: 14px
+
+.middle
+  margin-top: 6px
+  padding-bottom: 6px
+  font-size: 12px
+.bottom
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+
+.bottomLine
+  width: 100%
+  height: 10px
+  position: absolute
+  left: 0
+  bottom: 6px
+.activeLine
+  background-image: url(~images/commonBox/active_line.png)
+.unActiveLine
+  background-image: url(~images/commonBox/default_line.png)
+.lngLat
+  max-width: 300px
+  white-space: nowrap
+
+.icon
+  width: 16px
+  height: 16px
+  display: inline-block
+  position: relative
+  top: 2px
+  margin-right: 10px
+.highIcon
+  background-image: url(~images/shipList/radar_high.svg)
+  background-size: 100% 100%
+.middleIcon
+  background-image: url(~images/shipList/radar_middle.svg)
+  background-size: 100% 100%
+.lowIcon
+  background-image: url(~images/shipList/radar_low.svg)
+  background-size: 100% 100%
+.radarIcon
+  background-image: url(~images/shipList/radar.svg)
+  background-size: 100% 100%

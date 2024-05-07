@@ -1,0 +1,114 @@
+@import utils
+
+.wrapper
+  @extend .flexBetween
+  align-items: stretch
+  height: 100%
+  padding: 0 10px
+  color: #a6cdff
+  .commonLabel
+    line-height: 60px
+    color: #fff
+  .commonBg
+    background-image: url(~images/core/entryExitRecords/even.png)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+  .leftRighBox
+    @extend .cardShadow
+    width: 24%
+    height: 100%
+    overflow-y: auto
+    display: flex
+    flex-direction: column
+    .info
+      @extend .flexBetween
+      @extend .commonBg
+      height: 20%
+      padding-top: 10px
+      .infoContent
+        width: 100%
+        height: 100%
+        padding-left: 10px
+        overflow-y: auto
+        background-color: initial
+        border: none
+        color: #a6cdff
+        font-family: auto
+        font-size: 12px
+        resize: none
+        outline: none
+    .content
+      flex: 1
+      overflow-y: auto
+      line-height: 30px
+    .feedbackContent
+      @extend .content
+      @extend .commonBg
+      flex: 1
+    .borderCommon
+      border-bottom: 1px solid #eee
+    .cardBox
+      @extend .flexBetween
+      align-items: stretch
+      @extend .borderCommon
+      .icon
+        padding-top: 6px
+        padding-right: 6px
+    .cardItem
+      flex: 1
+      padding: 6px 0
+      .topBox
+        @extend .flexBetween
+        .textBold
+          font-weight: bold
+        .dealRecord
+          border-top: 1px dashed #ccc
+    .viewInfo
+      height: 20%
+      padding: 0 10px 10px 10px
+      @extend .flexBetween
+      flex-wrap: wrap
+      overflow-y: auto
+      @extend .commonBg
+      .image
+        width: 49.5%
+        height: calc(100% - 10px)
+        margin-top: 10px
+        border: solid 1px #4470b9
+        box-sizing: border-box
+        padding: 1px
+        position: relative
+        .imageLabel
+          position: absolute
+          bottom: 0
+          width: 100%
+          text-align: center
+          background-color: rgba(7,32,55, .58)
+          color: #fff
+          font-size: 12px
+          line-height: 24px
+          @extend .textEllipsis
+    .progressInfo
+      height: 49%
+  .middleBox
+    width: 50%
+    margin: 0 1%
+    padding-top: 15px
+    .form
+      margin-bottom: 4px
+    .map
+      height: 95%
+
+.infoWrapper
+  background-image: url(~images/core/wisdomCommand/alertBox.svg)
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-size: cover
+  font-size: 12px
+  color: #00f4fa
+  padding: 0 4px
+  min-width: 142.67px
+  height: 37.44px
+  box-sizing: border-box
+  .top
+    @extend .flexBetween

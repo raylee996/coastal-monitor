@@ -1,0 +1,35 @@
+@import "themeVariable"
+.wrapper
+    height: 440px
+    overflow: auto
+.recordItem
+    width: 100%
+    height: 100px
+    box-sizing: border-box
+    background-image: url(~images/commonBox/default.png)
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    position: relative
+    margin-bottom: 6px
+    .content
+        display: flex
+        flex-direction: column
+        padding: 10px
+        div
+            white-space: nowrap
+            text-overflow: ellipsis
+            overflow: hidden
+        .bottomContent
+            display: flex
+            justify-content: space-between
+.bottomLineBg
+    width: 100%
+    height: 6px
+    background-image: url(~images/commonBox/default_line.png)
+    background-size: 100% 100%
+    position: absolute
+    bottom: 6px
+    left: 0
+.quttoContent
+    color: $text-color1
+    cursor: pointer

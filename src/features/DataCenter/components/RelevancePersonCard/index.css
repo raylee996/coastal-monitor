@@ -1,0 +1,5 @@
+.ShipArchiveInfo__ImageCard .ant-image,
+.ShipArchiveInfo__ImageCard .ant-image-img {
+  width: 100%;
+  height: 100%;
+}

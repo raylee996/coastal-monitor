@@ -1,0 +1,132 @@
+$shows: none
+.wrapper
+  position: relative
+  width: 100%
+  height: 100%
+
+.loginPanel
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-top: -200px
+  margin-left: -200px
+  width: 400px
+  height: 400px
+.bgVideo
+  height: 100%
+  width: 100%
+  position: absolute
+  right: 0
+  bottom: 0
+  object-fit: fill
+    // z-index: -99
+.titles
+  position: absolute
+  right: 10%
+  top: 400px
+  z-index: 10
+  animation: moveTitle 1s
+  animation-fill-mode: forwards
+@keyframes moveTitle
+  from
+    top: 400px
+  to
+    top: 200px
+.bgcount
+  width: 420px
+  height: 294px
+  position: absolute
+
+  right: 16%
+  top: 310px
+  z-index: 10
+
+.bgimage
+  width: 420px
+  height: 294px
+  position: absolute
+  background: url("../../images/login/d.png") no-repeat
+  background-size: 100%
+.lefts
+  position: absolute
+  left: 108px
+  top: -12px
+  z-index: 10
+
+  animation: moveLeft 0.5s
+  animation-fill-mode: forwards
+.rights
+  position: absolute
+  left: 208px
+  top: -12px
+  z-index: 10
+  animation: moveright 0.5s
+  animation-fill-mode: forwards
+@keyframes moveright
+  from
+    display: block
+    left: 208px
+  to
+    display: block
+    left: 414px
+@keyframes moveLeft
+  from
+    display: block
+    left: 108px
+  to
+    display: block
+    left: -86px
+.form
+  margin-left: 22px
+  margin-right: 22px
+  margin-top: 75px
+  opacity: 0
+  animation: moveform 0.5s
+  animation-fill-mode: forwards
+  animation-delay: 0.5s
+  :global(.ant-input-affix-wrapper)
+    background-color: transparent !important
+    border: none !important
+    height: 46px
+    color: #fff !important
+    :global(.ant-input)
+      background-color: transparent !important
+      color: #fff !important
+      &::placeholder
+        color: #ccc
+        :global(.anticon)
+          color: #fff
+.formItem
+  width: 100%
+  height: 46px
+  background: url("../../images/login/in.png") no-repeat
+  background-size: 100% 100%
+@keyframes moveform
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.submit
+  padding: 0
+  margin: 0
+  border: none
+  background-color: initial
+  background-image: none
+.submits
+  padding: 0
+  margin: 0
+  border: none
+  background-color: initial
+  background-image: none
+  margin-left:4px
+.version
+  position: absolute
+  bottom: 8px
+  right: 8px
+  color: #ffffff
+  font-size: 12px
+.alerts
+  position: absolute
+  left: 38%
+  top: 100px

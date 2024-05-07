@@ -1,0 +1,92 @@
+@import utils
+
+.wrapper
+  @extend .flexBetween
+  height: calc(70vh - 48px)
+  width: 58vw
+  padding: 10px 12px
+  box-sizing: border-box
+  position: relative
+  .imageBg::before
+    content: ""
+    position: absolute
+    left: 10px
+    width: 18%
+    height: 100%
+    background: url('~images/commonBox/tabs_box.png')
+    background-size: 100% 50%
+    background-repeat: no-repeat
+    transform: rotateY(180deg)
+  .videoBg
+    background-image: url(~images/commonBox/tabs_box.png)
+    background-size: 100% 50%
+    background-repeat: no-repeat
+  .list
+    width: 18%
+    height: 100%
+    .tabs
+      @extend .flexBetween
+      align-items: center
+      height: 36px
+      line-height: 36px
+      padding: 0 4px
+      box-sizing: border-box
+      font-size: 14px
+      color: #6ea4d1
+      cursor: pointer
+      .tabsItem
+        width: 50%
+        height: 100%
+        margin: 0 10px
+        text-align: center
+        z-index: 10
+      .active
+        border-bottom: 1px solid #fff
+        color: #fff
+    .audioBox
+      width: 100%
+      height: calc(100% - 36px)
+      overflow-y: auto
+      .audio
+        width: calc(100% - 24px)
+        height: 24%
+        margin: 10px 10px 0 10px
+        cursor: pointer
+        position: relative
+        .mask
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          z-index: 10
+      .audioActive
+        border: solid 2px #59bdff
+      .audioUnactive
+        border: solid 1px #0a6eab
+  .contentBox
+    position: relative
+    width: 80%
+    height: 100%
+    .content
+      width: 100%
+      height: 100%
+      overflow: hidden
+.ArrowButton
+  position: absolute
+  top: 45%
+  color: #fff
+
+.leftButton
+  @extend .ArrowButton
+  left: 0
+
+.rightButton
+  @extend .ArrowButton
+  right: 0
+
+.previewGroup
+  display: none
+
+.bigImg
+  cursor: pointer

@@ -1,0 +1,50 @@
+@import utils
+
+.formItem
+  @extend .boxShadow
+
+.label
+  color: #fff
+
+.box
+  @extend .flexBetween
+  align-items: stretch
+  height: 100%
+  .content
+    flex: 1
+    .imageBox
+      display: flex
+      .image
+        width: 60px
+        height: 60px
+        margin-right: 5px
+  .icon
+    width: 20px
+    margin-left: 6px
+    color: red
+
+.btnBox
+  text-align: center
+
+.wrapper
+  // width: 900px
+  // height: 700px
+  width: 100%
+  height: 100%
+  padding: 0 20px
+  box-sizing: border-box
+  color: #a6cdff
+  .forms
+    width: 100%
+    height: calc(100% - 60px)
+    @extend .flexBetween
+    flex-direction: column
+    align-items: stretch
+    >.ant-form-item
+      color: #a6cdff
+    .contentBox
+      @extend .forms
+      width: 100%
+      flex: 1
+      overflow-y: auto
+      justify-content: start

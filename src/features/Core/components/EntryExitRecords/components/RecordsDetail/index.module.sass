@@ -1,0 +1,148 @@
+@import utils
+@import "src/themeVariable"
+
+.common_bg
+  background-size: 100% 100%
+  background-repeat: no-repeat
+
+.wrapper
+  height: calc(100% - 20px)
+  padding: 10px
+  background-color: #0b2c4f
+  .wrapperContent
+    height: 100%
+    // padding: 10px
+    display: flex
+    flex-direction: column
+    color: $text-color
+    box-sizing: border-box
+    .tabs
+      height: 9.76%
+      line-height: 160%
+      display: flex
+      text-align: center
+      .tabItem
+        width: 16.785%
+        .tabLabel
+          font-size: 14px
+          display: inline-block
+          padding-bottom: 4px
+        .active
+          border-bottom: 1px solid #fff
+          color: #fff
+    .content
+      flex: 1
+      height: 100%
+      overflow-y: auto
+      padding-left: 10px
+      padding-right: 30px
+      box-sizing: border-box
+      .box_odd_bg
+        @extend .common_bg
+        background-image: url(~images/core/entryExitRecords/odd.png)
+      .box_even_bg
+        @extend .common_bg
+        background-image: url(~images/core/entryExitRecords/even.png)
+      .box
+        width: 100%
+        height: 30%
+        padding: 12px 10px
+        display: flex
+        .image
+          width: 20%
+          margin-right: 1%
+          border: solid 1px #4470b9
+          padding: 1px
+          position: relative
+          color: #fff
+          font-size: 12px
+          text-align: center
+          .badge
+            position: absolute
+            z-index: 9
+            right: 1px
+            top: 1px
+            width: 37px
+            height: 16px
+            line-height: 16px
+            background-color: #0a6eab
+          .failImage
+            width: 100%
+            height: 100%
+            background-color: #050d17
+            .fail
+              position: absolute
+              width: 100%
+              top: 50%
+              transform: translate(0, -50%)
+        .iconBox
+          width: 41%
+          padding-left: 1%
+          .text
+            max-width: 56px
+            font-size: 15px
+            line-height: 28px
+            @extend .textEllipsis
+            .iconFirst
+              margin-right: 4px
+        .faceWidth
+          width: 69%
+          .faceTop
+            margin-top: 20px
+          .faceLineHight
+            line-height: 30px
+        .textContent
+          flex: 1
+          font-size: 12px
+          padding: 0 6%
+          .textFirstBox
+            display: flex
+          .textBox
+            @extend .textFirstBox
+            line-height: 24px
+            margin-bottom: 4%
+            .text
+              @extend .textEllipsis
+          .iconListBox
+            flex: 1
+            width: 100%
+            font-size: 14px
+            .iconContent
+              display: flex
+              flex-direction: row-reverse
+              .none_bg
+                background-color: rgba(45,104,163, .28)
+              .discard
+                background-color: rgba(45,104,163, 1)
+              .possess
+                background-color: #59bdff
+              .icon
+                width: 25px
+                height: 24px
+                margin: 0 2px
+                border-radius: 3px
+                text-align: center
+                .iconStyle
+                  font-size: 12px
+                  color: #0e3250
+            .iconContentHeight
+              height: 60%
+            .iconItemHeight
+              height: 30%
+
+.first_bg
+  @extend .common_bg
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/firstActive.png)
+.second_bg
+  @extend .common_bg
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/secondActive.png)
+.third_bg
+  @extend .common_bg
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/thirdActive.png)
+.fourth_bg
+  @extend .common_bg
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/fourthActive.png)

@@ -1,0 +1,30 @@
+@import "themeVariable"
+@import utils
+
+.wrapper
+  width: 100%
+  padding: 10px 0 10px .5%
+  max-height: 100%
+  overflow-x: hidden
+  overflow-y: auto
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+  color: $text-color
+  font-size: 12px
+
+.card
+  width: 32%
+  margin-left: 1%
+  height: 180px
+  padding: 10px
+  margin-bottom: 6px
+  box-sizing: border-box
+  background-color: rgba(6,49,88, .8)
+  .content
+    @extend .flexBetween
+    .imgs
+      width: 40%
+    .info
+      width: 54%
+      line-height: 30px

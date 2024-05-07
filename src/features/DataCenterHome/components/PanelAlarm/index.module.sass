@@ -1,0 +1,52 @@
+.wrapper
+  height: 100%
+
+.cardHeader
+  display: flex
+  width: 100%
+  >div
+    &:nth-child(1)
+      flex: 1
+
+.content
+  height: calc( 100% - 30px )
+
+.card
+  &:nth-child(1)
+    height: 56%
+  &:nth-child(2)
+    height: 40%
+
+.box
+  height: calc( 100% - 44px )
+
+.chart
+  position: relative
+  float: left
+  width: 50%
+  height: 100%
+
+.total
+  position: absolute
+  z-index: 19
+  top: 22%
+  left: 10%
+
+.alarmTitle
+  cursor: pointer
+.but
+  position: absolute
+  top: 76%
+  width: 18px
+  height: 29px
+  transform: translateY(-50%)
+  cursor: pointer
+
+.prev
+  @extend .but
+  left: -10px
+  color: #fff !important
+.next
+  @extend .but
+  right: 0
+  color: #fff !important

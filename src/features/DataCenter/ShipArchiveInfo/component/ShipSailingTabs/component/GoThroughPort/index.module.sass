@@ -1,0 +1,96 @@
+.wrapper
+  width: 100%
+  height: 100%
+  overflow: hidden
+  display: flex
+  padding: 10px
+  box-sizing: border-box
+  .left
+    width: 340px
+    height: 100%
+    overflow: hidden
+    margin-right: 8px
+    .leftTitle
+      width: 298px
+      height: 34px
+      line-height: 34px
+      text-align: center
+      background: #bae7ff
+      font-weight: bold
+      margin-bottom: 10px
+  .mapContainer
+    flex: 1
+    height: 800px
+    margin-right: 8px
+  .media
+    width: 19.5%
+
+.formItem
+  margin-bottom: 10px!important
+
+.Timeline
+  padding-top: 20px
+  margin: 20px 10px
+  max-height: 600px
+  height: auto
+  overflow: auto
+  cursor: pointer
+  padding-bottom: 30px
+
+.activeItem
+  background: #bae7ff
+.TimelineItem
+  width: 262px
+  min-height: 90px
+  height: auto
+  overflow: hidden
+  padding: 10px
+  border: solid 1px #eeeeee
+  border-radius: 4px
+  box-shadow: 0 0 10px #eeeeee
+  .timelineItemTitle
+    display: flex
+    justify-content: space-between
+    margin-bottom: 6px
+    .itemTitleLeft
+      font-weight: bold
+  .line
+    margin-bottom: 6px!important
+
+.listBox
+  background: url('~images/commonBox/default.png') no-repeat
+  background-size: 100% 100%
+  margin-bottom: 8px
+  transition: 0.3s
+  .boxWrapper
+    padding: 16px
+    height: 78px
+    display: flex
+    flex-direction: column
+    background: url('~images/commonBox/default_line.png') no-repeat
+    background-size: 94% 9px
+    background-position: 50% 96px
+    .item
+      flex: 1
+      font-size: 14px
+    .listTitle
+      display: flex
+      justify-content: space-between
+      .state1
+        color: #28e29a
+      .state2
+        color: #ffa810
+.listBox:hover
+  background: url('~images/commonBox/default_hover.png') no-repeat
+  background-size: 100% 100% !important
+  .boxWrapper
+    background: url('~images/commonBox/default_line_hover.png') no-repeat
+    background-size: 94% 9px !important
+    background-position: 50% 96px !important
+.isActive
+  background: url('~images/commonBox/active.png') no-repeat !important
+  background-size: 100% 100% !important
+  .boxWrapper
+    background: url('~images/commonBox/active_line.png') no-repeat !important
+    background-size: 94% 9px !important
+    background-position: 50% 96px !important

@@ -1,0 +1,128 @@
+.wrapper
+  position: relative
+  height: 100%
+  .device
+    z-index: 99
+    position: absolute
+    top: -50px
+    left: 40%
+    display: flex
+    width: 20%
+    white-space: nowrap
+    .lable
+      width: 20%
+      line-height: 40px
+    .select
+      width: 240px
+      padding: 5px 0
+.title
+  display: flex
+
+.panorama
+  position: relative
+  height: 48px
+  // height: 80px
+  object-fit: fill
+  .imageBox
+    z-index: 1
+    width: 100%
+    height: 100%
+    user-select: none
+    .image
+      z-index: 1
+      width: 100%
+      height: 100%
+  .panoramaBut
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    cursor: pointer
+    z-index: 6
+  .panoramaABut
+    @extend .panoramaBut
+    width: 240px
+    box-shadow: 0 0 20px red inset
+  .panoramaBBut
+    @extend .panoramaBut
+    width: 80px
+    box-shadow: 0 0 20px blue inset
+  .panoramaCBut
+    @extend .panoramaBut
+    width: 80px
+    box-shadow: 0 0 20px green inset
+  .panoramaDBut
+    @extend .panoramaBut
+    width: 80px
+    box-shadow: 0 0 20px orange inset
+
+.panoramaBox
+  height: calc( 100% - 48px )
+  display: flex
+  flex-wrap: wrap
+  cursor: pointer
+  .topBox
+    width: 100%
+    height: 50%
+    border: 2px solid red
+    box-sizing: border-box
+    overflow: hidden
+  .bottomCommonBox
+    width: calc( 100% / 3 )
+    height: 50%
+    box-sizing: border-box
+    overflow: hidden
+  .bottomLeftBox
+    @extend .bottomCommonBox
+    border: 2px solid blue
+  .bottomMiddleBox
+    @extend .bottomCommonBox
+    border: 2px solid green
+  .bottomRightBox
+    @extend .bottomCommonBox
+    border: 2px solid orange
+  .fullBox
+    width: 100%
+    height: 100%
+  .hideBox
+    display: none
+  >img
+    width: 100%
+    height: 100%
+
+.panoramaA
+  position: relative
+  height: calc( 50% - 24px )
+  border: 2px solid red
+  box-sizing: border-box
+  overflow: hidden
+
+.imgContent
+  height: 100%
+  user-select: none
+
+// .panoramaImgBox
+//   position: relative
+//   overflow: hidden
+//   >img
+//     position: relative
+//     height: 100%
+//     user-select: none
+
+.menu
+  position: absolute
+  top: 90px
+  right: 10px
+  border-radius: 8px
+
+.textBox
+  position: absolute
+  right: 10px
+  top: 0
+  display: flex
+  line-height: 80px
+  color: #fff
+  font-size: 12px
+  z-index: 5
+  .playbackText
+    padding-left: 6px

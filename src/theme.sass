@@ -1,0 +1,632 @@
+@import "themeVariable"
+//全局覆盖第三方组件样式文件
+
+// 修改浏览器记住密码
+.ant-input:-webkit-autofill
+  -webkit-text-fill-color: #fff !important
+  transition: background-color 50000000s ease-in-out 0s !important
+  caret-color: #fff
+
+//表单相关样式覆盖
+.ant-form-item-label label, .ant-form-item, .ant-input-suffix
+  color: $text-color!important
+.ant-input-affix-wrapper,.ant-input-affix-wrapper:hover
+  background: transparent
+  border: $border!important
+.ant-input
+  background: transparent
+  color: $text-color!important
+  border: $border
+.ant-input:hover
+  border: $border
+input::placeholder,textarea::placeholder
+  color: $placeholder-color!important
+textarea
+  border: $border
+.ant-input-data-count
+  color: $text-color!important
+.ant-input-number
+  background: transparent
+  border: $border
+  transition: initial
+.ant-input-disabled,.ant-input-disabled:hover
+  border: none
+.ant-input-number-input
+  color: $text-color!important
+.ant-input-number .ant-input-number-handler-wrap
+  background-color: $text-color
+  transition: initial
+.ant-input-number .ant-input-number-handler
+  color: $text-color2
+  border-inline-start: $border!important
+  transition: initial
+.ant-input-number .ant-input-number-handler-down
+  border-block-start: $border!important
+.ant-input-number-group .ant-input-number-group-addon
+  color: $text-color!important
+  border: $border!important
+.ant-select-selector
+  background: transparent!important
+  border: $border!important
+.ant-select-selection-item
+  color: $text-color!important
+.ant-select-arrow
+  color: $text-color!important
+.ant-select-selection-placeholder
+  color: $placeholder-color!important
+.ant-radio-wrapper
+  color: $text-color!important
+.ant-radio-inner
+  background: transparent!important
+  border: solid 1px $text-color!important
+.ant-radio-inner:hover
+  border: solid 1px $text-color
+.ant-radio-checked .ant-radio-inner
+  border-color: $text-color1!important
+  background-color: transparent!important
+.ant-radio-checked .ant-radio-inner::after
+  background: $text-color1
+  transform: scale(0.5)
+.ant-picker
+  background: transparent
+  border: $border!important
+.ant-picker .ant-picker-suffix
+  color: $text-color
+.ant-picker .ant-picker-input >input
+  color: $text-color
+.ant-select-dropdown
+  background: $background-color2!important
+  border: $border!important
+.ant-select-item
+  color: $text-color!important
+.ant-select-item:hover
+  background: $background-color
+  color: $text-color2
+.ant-select-item-option-content
+  color: $text-color
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  background: $background-color
+.ant-select-item:hover,.ant-select-item-option-selected,.ant-select-item-option-active:not(.ant-select-item-option-disabled)
+  background: $background-color !important
+  color: $text-color2 !important
+.ant-input-affix-wrapper .ant-input-show-count-suffix
+  color: $text-color
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) .ant-select-item-option-state
+  color: $text-color!important
+.ant-select-multiple .ant-select-selection-item
+  background: $background-color !important
+.ant-select .ant-select-clear
+  background: $background-color!important
+  color: $text-color!important
+.ant-transfer
+  color: $text-color!important
+.ant-transfer-list-header
+  color: $text-color!important
+  background: $background-color!important
+.ant-transfer-list-content-item-checked
+  background-image: linear-gradient(to right, #235b8d, #123965) !important
+  background-color: initial !important
+.ant-tree
+  color: $text-color!important
+  background-color: initial !important
+.ant-select-selector input
+  color: $text-color!important
+.ant-tree-checkbox-disabled .ant-tree-checkbox-inner
+  &:after
+    border-color: #fff !important
+
+//带button的radio
+.ant-radio-button-wrapper
+  background-color: $background-color4
+  border: none
+  color: $text-color!important
+.ant-radio-button-wrapper-checked:not(:where(.css-dev-only-do-not-override-1s3dcof).ant-radio-button-wrapper-disabled)
+  background-color: #2570c8
+  color: #FFFFFF!important
+.ant-radio-button-wrapper:first-child
+  border-inline-start: none
+.ant-radio-button-wrapper:not(:first-child)::before
+  width: 0
+
+//表格相关
+.ant-spin-nested-loading .ant-spin-container::after
+  height: 0px
+.ant-table-wrapper table,.ant-table-wrapper .ant-table .ant-table-header
+  border-radius: 0px
+.ant-table-wrapper .ant-table
+  background: $background-color-opacity90 !important
+.ant-table-wrapper .ant-table-cell-scrollbar:not([rowspan])
+  box-shadow: none!important
+.ant-table-wrapper .ant-table .ant-table-filter-trigger
+  margin-right: 30px !important
+  color: #fff
+.ant-table .ant-table-thead >tr>th
+  background: $background-color5 !important
+  color: $text-color2
+  white-space: nowrap
+  height: 55px
+  border-bottom: none
+.ant-table-small .ant-table-thead >tr>th
+  height: 40px
+.ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+:where(.css-12upa3x).ant-table-wrapper .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+:where(.css-dev-only-do-not-override-12upa3x).ant-table-wrapper .ant-table-thead >tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before
+  height: 0px !important
+  background: transparent
+//奇数行偶数行变色
+.table-even
+  background: $background-color3
+  color: $text-color
+.table-odd
+  background: $background-color4
+  color: $text-color
+.ant-table-wrapper .ant-table-tbody >tr.ant-table-row:hover>td, :where(.css-dev-only-do-not-override-1s3dcof).ant-table-wrapper .ant-table-tbody >tr >td.ant-table-cell-row-hover
+  background: transparent
+.ant-table-wrapper .ant-table-tbody >tr.ant-table-row:hover
+  background: $table-hover-background-color
+  color: $text-color2!important
+  border-radius: 0!important
+.ant-table-wrapper .ant-table
+  border-radius: 0 !important
+.ant-table-wrapper .ant-table-container table>thead>tr:first-child th:first-child
+  border-radius: 0
+.ant-table-cell
+  border-radius: 0!important
+.ant-table-wrapper .ant-table-tbody >tr >td.ant-table-cell-row-hover
+  background: transparent !important
+.ant-table-wrapper .ant-table-tbody >tr.ant-table-row-selected >td
+  background: transparent
+  &:first-child
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      width: 2px
+      height: 100%
+      background-color: #fff
+.ant-table-wrapper .ant-table-tbody >tr.ant-table-row-selected
+  background: $table-selected-background-color-linear
+  color: $text-color2!important
+  border-radius: 0!important
+.ant-table-empty,.ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td
+  background: $background-color-opacity90!important
+.ant-input-affix-wrapper .ant-input-clear-icon,
+.ant-input-affix-wrapper .ant-input-clear-icon:hover
+  color: $text-color
+.ant-table-wrapper .ant-table-tbody >tr >td
+  border-bottom: none
+.ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder
+  background: transparent
+:where(.css-dev-only-do-not-override-12upa3x).ant-table-wrapper .ant-table-thead >tr>td,:where(.css-12upa3x).ant-table-wrapper .ant-table-thead >tr>td
+  background: $background-color5
+  border-bottom: none
+//分页相关
+.ant-pagination
+  color: $text-color
+.ant-pagination .ant-pagination-item
+  border: $border
+.ant-pagination .ant-pagination-item a
+  color: $text-color!important
+.ant-pagination .ant-pagination-item-active
+  background: #332b2c
+  border: solid 1px #7c391c
+.ant-pagination .ant-pagination-item-active a
+  color: $text-color2!important
+.ant-pagination-item-link
+  color: $text-color!important
+.ant-pagination .ant-pagination-options-quick-jumper input
+  color: $text-color
+  background: transparent
+  border: $border
+.ant-pagination .ant-pagination-options-quick-jumper input:focus
+  border: $border
+.ant-pagination .ant-pagination-item-active:hover
+  border: $border
+.ant-pagination-item-container .ant-pagination-item-link-icon,
+.ant-pagination-item-container .ant-pagination-item-ellipsis
+  color: $text-color!important
+
+.ant-pagination-simple-pager> input
+  color: #a6cdff !important
+  background-color: transparent !important
+  border: $border !important
+
+// 单个时间选择组件
+.ant-picker
+  border-radius: 4px !important
+  background-color: transparent !important
+  border-color: $border !important
+  color: $text-color !important
+  .ant-picker-input > input
+    color: $text-color !important
+    .ant-picker-clear, .ant-picker-suffix
+      background-color: transparent !important
+      color: $text-color !important
+
+//时间范围选择组件
+.ant-picker-panel-container .ant-picker-panel
+  background: $background-color !important
+.ant-picker-panel-container .ant-picker-body th
+  color: $text-color2 !important
+.ant-picker-cell .ant-picker-cell-inner
+  color: $text-color2 !important
+.ant-picker-header-view
+  color: $text-color2 !important
+.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner
+  background: #1677ff !important
+.ant-picker-time-panel-cell-inner:hover
+  background: rgba(115, 210, 236, 0.6) !important
+.ant-picker-time-panel-cell .ant-picker-time-panel-cell-inner
+  color: $text-color2 !important
+.ant-picker-header-view button
+  color: $text-color2 !important
+.ant-picker-footer
+  background: $background-color !important
+.ant-picker .ant-picker-clear
+  background: $text-color2 !important
+  border-radius: 50%
+.ant-picker-clear, .ant-picker-suffix
+  background-color: transparent
+  color: $text-color !important
+.ant-picker-dropdown .ant-picker-panel-container,
+.ant-picker-dropdown .ant-picker-range-arrow::before
+  background-color: $background-color !important
+.ant-picker .ant-picker-separator
+  color: $text-color
+
+//default，primary按钮样式覆盖
+.ant-btn-default
+  background-image: url("./images/buttons/btn-default.png")
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  color: #cbe6ff
+  border: none
+  background-color: initial
+
+.ant-btn-primary
+  background-image: url("./images/buttons/btn-primary.png")
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  color: #cbe6ff
+  border: none
+.ant-btn
+  border-radius: 4px
+.ant-btn-link
+  color: $text-color1
+  padding: 2px !important
+
+.ant-btn-text
+  color: $text-color !important
+
+.ant-btn-text:hover
+  color: $text-color1 !important
+
+//popover样式
+.ant-popover .ant-popover-inner
+  background: rgba(7, 32, 55, 0.7)
+  -webkit-backdrop-filter: blur(4px)
+  backdrop-filter: blur(4px)
+.ant-popconfirm .ant-popconfirm-message-title
+  color: $text-color2
+.ant-popover .ant-popover-arrow:before
+  background: rgba(7, 32, 55, 0.7)
+  // -webkit-backdrop-filter: blur(4px)
+  // backdrop-filter: blur(4px)
+
+//上传图片组件
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-container,
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select
+  width: 80px
+  height: 80px
+  border: $border-dashed
+  color: $placeholder-color
+  border-radius: 8px
+.ant-upload-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item
+  border: none
+.ant-upload-list.ant-upload-list-text,
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-icon .anticon
+  color: $text-color
+
+//checkbox相关
+.ant-checkbox-checked .ant-checkbox-inner
+  background-color: transparent
+  border: solid 1px $text-color1
+.ant-checkbox-wrapper
+  color: $text-color
+.ant-checkbox .ant-checkbox-inner:after
+  border: 1px solid $text-color1
+  border-top: 0
+  border-left: 0
+  top: 44%
+.ant-checkbox .ant-checkbox-inner
+  background-color: transparent !important
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner
+  background-color: transparent
+  border: solid 1px $text-color1
+
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner
+  border: solid 1px $text-color
+.ant-checkbox-checked:after
+  border: 1px solid $text-color1
+.ant-empty-description
+  color: $text-color1 !important
+.ant-checkbox-disabled+span
+  color: #ccc
+:where(.css-dev-only-do-not-override-12upa3x).ant-checkbox-group
+  column-gap: 0px
+//tag组件
+.ant-tag
+  border: $border
+  color: $text-color
+  padding: 5px 10px
+  margin-bottom: 6px
+.ant-tag .ant-tag-close-icon
+  color: #59bdff !important
+.ant-tag .ant-tag-close-icon:hover
+  color: $text-color
+
+// 折叠面板样式覆盖
+.ant-collapse>.ant-collapse-item >.ant-collapse-header
+  color: #fff
+
+//tab组件样式覆盖
+.ant-tabs
+  color: $text-color
+.ant-tabs-top >.ant-tabs-nav::before
+  border-bottom: $border!important
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn
+  color: $text-color1
+.ant-tabs .ant-tabs-ink-bar
+  background-color: $text-color1
+
+//Windowstill组件默认样式覆盖
+.hooks__Windowstill-wrapper
+  border-radius: 0
+.hooks__Windowstill-header
+  height: 50px
+  border-bottom: none
+  background-image: url("./images/popup/title_bg.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-color: $background-color-opacity90
+.hooks__Windowstill-header-title
+  background-image: -webkit-linear-gradient(top,#ffffff,#66c2ff)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  &:before
+    content: '\e672'
+    display: inline
+    padding-right: 8px
+    font-family: "iconfont" !important
+    font-size: 16px
+    font-style: normal
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+.hooks__Windowstill-actions
+  >button
+    color: $text-color !important
+.hooks__Windowstill-content
+  height: calc(100% - 50px)
+  background-color: $background-color-opacity90
+  backdrop-filter: blur(4px)
+
+//Popup组件默认样式覆盖
+.hooks__Popup-content
+  border-radius: 0 !important
+.hooks__Popup-header
+  height: 50px !important
+  border-bottom: none !important
+  background-image: url("./images/popup/title_bg.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-color: $background-color-opacity90
+  >button
+    color: $text-color !important
+.hooks__Popup-title
+  font-weight: bolder !important
+  background-image: -webkit-linear-gradient(top,#ffffff,#66c2ff)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+.hooks__Popup-body
+  height: calc(100% - 50px) !important
+  background-color: $background-color-opacity90 !important
+  backdrop-filter: blur(4px)
+
+//Modal组件样式覆盖
+.ant-modal-content
+  padding-top: 0 !important
+  padding-left: 0 !important
+  padding-right: 0 !important
+  padding-bottom: 24px
+  background-color: $background-color-opacity90 !important
+  backdrop-filter: blur(4px)
+  border-radius: 0 !important
+.ant-modal-header
+  position: relative
+  margin-bottom: 0 !important
+  height: 50px !important
+  user-select: none
+  background-image: url("./images/popup/title_bg.png") !important
+  background-color: $background-color-opacity90 !important
+  background-repeat: no-repeat !important
+  background-size: 100% 100% !important
+  >div
+    line-height: 40px !important
+    font-size: 16px !important
+    font-weight: bolder !important
+    text-indent: 8px
+    background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+.ant-modal-body
+  padding: 0 16px
+.ant-modal-footer
+  padding: 0 16px
+.ant-modal-close
+  top: 12px !important
+  color: #ddd !important
+
+.ant-descriptions
+  .ant-descriptions-item-label
+    color: #fff !important
+    text-align: right
+  .ant-descriptions-item-content
+    color: $text-color
+
+// 进度条样式覆盖
+.ant-slider-step
+  background-color: #1f4569 !important
+.ant-slider
+  .ant-slider-track
+    z-index: 9
+    background-color: #98cdff
+.ant-slider-handle
+  z-index: 19
+// 地区下拉框
+.ant-cascader-menu-item,.anticon-right
+  color: #a6cdff
+
+.ant-cascader-menu-item:hover,.ant-cascader-menu-item-active
+  background-color: rgba(115, 210, 236, 0.6) !important
+  color: #a6cdff
+
+.ant-select-selection-item
+  color: #d5e4fa !important
+//Tabs切换存在的问题
+.ant-tabs,
+.ant-tabs-content-holder,
+.ant-tabs-content,
+.ant-tabs-tabpane
+  height: 100%
+
+//暂无数据
+.emptyData
+  width: 100%
+  height: 140px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .emptyImg
+    width: 68px
+    height: 82px
+    background-image: url("./images/noData.png")
+    background-repeat: no-repeat
+    background-size: contain
+  .emptyText
+    font-size: 14px
+    color: $text-color1
+    margin-top: 10px
+
+// 选中菜单
+.ant-menu-item-selected
+  background-color: #175392 !important
+  border-radius: 25px 0px 0px 25px !important
+  color: #fff !important
+  width: 99% !important
+.ant-menu-item-active
+  color: #fff !important
+.ant-menu-item:not(.ant-menu-item-selected):active
+  background: transparent !important
+  color: #a6cdff !important
+.ant-menu-inline
+  .ant-menu-item
+    height: 50px !important
+    line-height: 50px !important
+// 按钮相关 
+.ant-btn.ant-input-search-button
+  color: #fff !important
+.ant-notification .ant-notification-notice
+  background-color: $background-color-opacity90
+.ant-notification-notice
+  background-color: $background-color-opacity90
+.ant-notification-close-icon
+  color: $text-color2
+
+.ant-form-item-label .ant-form-item-tooltip
+  color: $text-color2 !important
+
+.ant-form-inline .ant-form-item
+  margin-bottom: 4px
+
+.ant-upload.ant-upload-select
+  margin-bottom: 0 !important
+
+//分段控制器
+.ant-segmented
+  background-color: $background-color4
+  color: $text-color
+.ant-segmented-item-selected
+  background-color: #1677ff!important
+  color: $text-color2!important
+.ant-segmented .ant-segmented-item:hover:not(.ant-segmented-item-selected):not(.ant-segmented-item-disabled)
+  color: $text-color2!important
+.ant-segmented-thumb
+  background: #1677ff !important
+
+.ant-typography
+  color: $text-color !important
+  &:hover
+    color: $text-color4 !important
+
+.hooks__Upload
+  color: $text-color
+
+.ant-input-suffix
+  .ant-input-password-icon
+    color: #a6cdff !important
+.ant-btn-default
+  &[disabled]
+    color: #666666 !important
+.ant-progress-text
+  color: $text-color !important
+
+// 树形控件
+.ant-tree .ant-tree-checkbox .ant-tree-checkbox-inner
+  background: transparent !important
+.ant-tree .ant-tree-checkbox:not(.ant-tree-checkbox-disabled):hover .ant-tree-checkbox-inner,.ant-tree .ant-tree-checkbox-checked .ant-tree-checkbox-inner
+  border: solid 1px $text-color1
+.ant-tree .ant-tree-checkbox .ant-tree-checkbox-inner:after
+  border: 2px solid $text-color1
+  border-top: 0
+  border-inline-start: 0
+.ant-tree .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner:after
+  color: $text-color !important
+
+.hooks__Viewer-footer
+  background-color: $background-color-opacity70
+  backdrop-filter: blur(2px)
+.leaflet-tooltip
+  background: rgba(7, 37, 55, 0.3 )
+  border: none
+  color: #a6cdff
+.leaflet-tooltip-top:before
+  border-top-color: rgba(7, 37, 55, 0.3 )
+.leaflet-tooltip-right:before
+  border-right-color: rgba(7, 37, 55, 0.3 )
+.leaflet-tooltip-left:before
+  border-left-color: rgba(7, 37, 55, 0.3 )
+.leaflet-tooltip-bottom:before
+  border-bottom-color: rgba(7, 37, 55, 0.3 )
+
+// 图片组预览进度数字
+.ant-image-preview-operations-progress
+  user-select: none
+.ant-cascader-menu
+  color: #a6cdff
+
+// 消息提示
+.ant-tooltip
+  z-index: 2050
+
+.ant-message
+  z-index: 2060
+
+.ant-popconfirm .ant-popconfirm-message .ant-popconfirm-title
+  color: #a6cdff
+
+.ant-upload-list-item-thumbnail
+  font-size: 12px

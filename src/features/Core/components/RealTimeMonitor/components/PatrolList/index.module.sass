@@ -1,0 +1,45 @@
+@import 'src/themeVariable'
+@import utils
+
+.wrapper
+  position: relative
+  height: 100%
+  overflow: auto
+  >footer
+    height: 80px
+    text-align: center
+    >div
+      height: 40px
+
+.content
+  height: calc( 100% - 80px )
+  >div
+    &:nth-child(even)
+      background-color: $background-color3
+    &:hover
+      background-color: $table-hover-background-color
+
+.card
+  display: flex
+  line-height: 32px
+
+.cardAct
+  @extend .card
+  background-image: $table-selected-background-color-linear
+
+.name
+  @extend .textEllipsis
+  flex: 1
+  user-select: none
+  cursor: pointer
+    
+
+.itemIcon
+  width: 30px
+  text-align: center
+
+.actions
+  width: 64px
+
+.num
+  color: #999

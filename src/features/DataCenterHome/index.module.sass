@@ -1,0 +1,496 @@
+// 实时视频
+$videoTop: 60px
+$videoHeight: calc( (100% - 370px) / 4 )
+// 布控数据
+$controlWidthTop: calc( 60px + (100% - 370px) / 4 )
+$controlWidthHeight: calc( (100% - 60px) / 4 )
+// 实时船舶数据
+$RealWidthTop: calc( 60px + (100% - 370px) / 4 + (100% - 60px) / 4)
+$RealWidthHeight: calc( (100% - 60px) / 4 )
+// 采集数据
+$collectionWidthTop: calc( 60px + (100% - 370px) / 4 + (100% - 60px) / 4 + (100% - 60px) / 4 )
+$collectionWidthHeight: calc( (100% - 60px) / 3 )
+
+// 人车数据
+$personWidthTop: 60px
+$personWidthHeight: calc( (100% - 60px) * 0.25 )
+// 预警数据
+$contWidthTop: calc( 60px + (100% - 60px) * 0.25 )
+$contWidthHeight: calc( (100% - 60px) * 0.45 )
+// 重点目标
+$targetWidthTop: calc( 60px + (100% - 60px) * 0.25 + (100% - 60px) * 0.45 )
+$targetWidthHeight: calc( (100% - 60px) * 0.4 )
+
+.wrapper
+  position: relative
+  width: 100%
+  height: 100%
+
+.background
+  position: absolute
+  z-index: 9
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+$leftRight: 22px
+
+.bgleft
+  position: absolute
+  z-index: 19
+  height: 100%
+  width: 430px
+  background: url('../../images/situation/zuo.png') no-repeat
+  background-size: 100%
+  background-position-y:30px
+.bgleftnight
+  position: absolute
+  z-index: 19
+  height: 100%
+  width: 430px
+  background: url('../../images/situation/zt.png') no-repeat
+  background-size: 100%
+  background-position-y:30px
+.contWidth
+  width: 430px
+  position: absolute
+  z-index: 20
+  top: $contWidthTop
+  height: $contWidthHeight
+.alarmData
+  position: absolute
+  z-index: 19
+  left: $leftRight
+  width: 400px
+  height: 100%
+  
+.targetWidth
+  position: absolute
+  z-index: 20
+  top: $targetWidthTop
+  width: 430px
+  height: $targetWidthHeight
+.targetData
+  position: absolute
+  z-index: 19
+  left: $leftRight
+  width: 400px
+  height: 260px
+ 
+.personWidth
+  position: absolute
+  z-index: 20
+  top: $personWidthTop
+  width: 430px
+  height: $personWidthHeight
+.personData
+  position: absolute
+  z-index: 19
+  left: $leftRight
+  width: 400px
+  height: 300px
+ 
+.controlWidth
+  position: absolute
+  z-index: 20
+  top: $controlWidthTop
+  right: 0px
+  width: 430px
+  height: $controlWidthHeight
+.controlData
+  position: absolute
+  z-index: 19
+  right: $leftRight
+  width: 400px
+  height: 100%
+.RealWidth
+  position: absolute
+  z-index: 19
+  top: $RealWidthTop
+  right: 0px
+  width: 430px
+  height: $RealWidthHeight
+.RealData
+  position: absolute
+  z-index: 18
+  // top: calc( (100% - 60px) / 4 + 60px)
+  right: $leftRight
+  width: 400px
+  // height: calc( (100% - 60px) / 4 )
+  height: 100%
+.collectionWidth
+  position: absolute
+  z-index: 20
+  top: $collectionWidthTop
+  right: 0px
+  width: 430px
+  height: $collectionWidthHeight
+.collection
+  position: absolute
+  z-index: 19
+  // top: calc( (100% + 65px) / 2 )
+  right: $leftRight
+  width: 400px
+  // height: calc( (100% - 60px) / 3 )
+  height: 100%
+
+.video
+  position: absolute
+  z-index: 19
+  top: $videoTop
+  right: 0
+  padding: 0 22px
+  width: 400px
+  height: $videoHeight
+
+.place
+  position: absolute
+  z-index: 19
+  bottom: 0
+  left: 460px
+  right: 460px
+  height: 200px
+  background: url('../../images/situation/bottom.png') no-repeat
+  background-size: 100%
+  background-position-x: -20px
+.placenight
+  position: absolute
+  z-index: 19
+  bottom: 0
+  left: 460px
+  right: 444px
+  height: 200px
+  background: url('../../images/situation/bt.png') no-repeat
+  background-size: 100%
+  background-position-x: -20px
+.test
+  position: absolute
+  z-index: 19
+  bottom: 270px
+  left: 460px
+  width: 800px
+  height: 640px
+  >iframe
+    width: 100%
+    height: 100%
+
+.animCloudLeft
+  position: absolute
+  z-index: 13
+  top: 30px
+  left: -600px
+  animation: fadeInLeft 10s
+
+@keyframes fadeInLeft
+  from
+    opacity: 0
+    transform: translate(-800px,0)
+  to
+    opacity: 1
+    transform: translate(0,0)
+
+.animCloudRight
+  position: absolute
+  z-index: 13
+  top: 30px
+  right: -600px
+  animation: fadeInRight 10s
+
+@keyframes fadeInRight
+  from
+    opacity: 0
+    transform: translate(800px,0)
+  to
+    opacity: 1
+    transform: translate(0,0)
+
+.shipContent
+  position: absolute
+  z-index: 13
+  left: 50%
+  top: 35%
+  bottom: 38%
+  width: 50%
+  height: 37%
+  transform: translate(-50%, 0)
+
+.shipBox
+  position: absolute
+  width: 46px
+  height: 63px
+  background: url('../../images/header/1.gif') no-repeat
+  background-size: 100%
+  opacity: 0
+
+.ship
+  width: 26px
+  height: 14px
+  margin-top: 21px
+  margin-left: 10px
+  user-select: none
+
+.shipAn
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  // animation-duration: 5s
+
+.shipRightAn1
+  @extend .shipAn
+  animation-name: shipRightAn1
+
+@keyframes shipRightAn1
+  0%
+    top: 40%
+    left: 0
+    opacity: 1
+  20%
+    top: 45%
+    left: 20%
+  40%
+    top: 25%
+    left: 40%
+  60%
+    top: 25%
+    left: 60%
+  80%
+    top: 15%
+    left: 80%
+  100%
+    top: 0
+    left: 100%
+    opacity: 1
+
+.shipRightAn2
+  @extend .shipAn
+  animation-name: shipRightAn2
+
+@keyframes shipRightAn2
+  0%
+    top: 60%
+    left: 30%
+    opacity: 1
+  20%
+    top: 55%
+    left: 40%
+  40%
+    top: 35%
+    left: 55%
+  60%
+    top: 30%
+    left: 75%
+  80%
+    top: 20%
+    left: 85%
+  100%
+    top: 0
+    left: 100%
+    opacity: 1
+
+.shipRightAn3
+  @extend .shipAn
+  animation-name: shipRightAn3
+
+@keyframes shipRightAn3
+  0%
+    top: 50%
+    left: 50%
+    opacity: 1
+  20%
+    top: 45%
+    left: 55%
+  40%
+    top: 40%
+    left: 65%
+  60%
+    top: 35%
+    left: 75%
+  80%
+    top: 30%
+    left: 85%
+  100%
+    top: 10%
+    left: 100%
+    opacity: 1
+
+.shipLeftAn1
+  @extend .shipAn
+  animation-name: shipLeftAn1
+
+@keyframes shipLeftAn1
+  0%
+    top: 0
+    right: 0
+    opacity: 1
+  20%
+    top: 10%
+    right: 20%
+  40%
+    top: 20%
+    right: 40%
+  60%
+    top: 30%
+    right: 60%
+  80%
+    top: 45%
+    right: 80%
+  100%
+    top: 50%
+    right: 100%
+    opacity: 1
+
+.shipLeftAn2
+  @extend .shipAn
+  animation-name: shipLeftAn2
+
+@keyframes shipLeftAn2
+  0%
+    top: 20%
+    right: 30%
+    opacity: 1
+  20%
+    top: 15%
+    right: 35%
+  40%
+    top: 25%
+    right: 45%
+  60%
+    top: 45%
+    right: 60%
+  80%
+    top: 55%
+    right: 80%
+  100%
+    top: 65%
+    right: 100%
+    opacity: 1
+
+.shipLeftAn3
+  @extend .shipAn
+  animation-name: shipLeftAn3
+
+@keyframes shipLeftAn3
+  0%
+    top: 30%
+    right: 50%
+    opacity: 1
+  20%
+    top: 35%
+    right: 60%
+  40%
+    top: 40%
+    right: 65%
+  60%
+    top: 65%
+    right: 75%
+  80%
+    top: 70%
+    right: 85%
+  100%
+    top: 80%
+    right: 100%
+    opacity: 1
+
+.alarmBox
+  position: absolute
+  top: 0
+  left: 0
+
+.alarmInfo
+  width: 80px
+  height: 20px
+  line-height: 20px
+  text-indent: 8px
+  color: #fff
+  font-size: 12px
+  border-radius: 4px
+  border-style: solid
+  border-width: 1px
+  user-select: none
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    top: 20px
+    left: 0
+    width: 0
+    height: 40px
+    border-style: dashed
+    border-width: 1px
+  &:before
+    content: ''
+    position: absolute
+    display: block
+    top: 53px
+    left: -10px
+    width: 20px
+    height: 20px
+    border-radius: 20px
+    transform: rotateX(45deg)
+
+.alarmInfo1
+  @extend .alarmInfo
+  border-color: rgba(255, 0, 0,0.6)
+  background-image: linear-gradient(rgba(255, 0, 0,0.6),rgba(255, 0, 0,0.2))
+  &:after
+    border-color: rgba(255, 0, 0,0.6)
+  &:before
+    background-color: rgba(255, 0, 0,0.5)
+
+.alarmInfo2
+  @extend .alarmInfo
+  border-color: rgba(255, 165, 0,0.6)
+  background-image: linear-gradient(rgba(255, 165, 0,0.6),rgba(255, 165, 0,0.2))
+  &:after
+    border-color: rgba(255, 165, 0,0.6)
+  &:before
+    background-color: rgba(255, 165, 0,0.6)
+
+.alarmInfo3
+  @extend .alarmInfo
+  border-color: rgba(255, 255, 0,0.6)
+  background-image: linear-gradient(rgba(255, 255, 0,0.6),rgba(255, 255, 0,0.2))
+  &:after
+    border-color: rgba(255, 255, 0,0.6)
+  &:before
+    background-color: rgba(255, 255, 0,0.6)
+
+.alarmArea1
+  top: 15%
+  left: 10%
+
+.alarmArea2
+  top: 50%
+  left: 15%
+
+.alarmArea3
+  top: 26%
+  left: 28%
+
+.alarmArea4
+  top: 43%
+  left: 40%
+
+.alarmArea5
+  top: 52%
+  left: 46%
+
+.alarmArea6
+  top: 9%
+  left: 43%
+
+.alarmArea7
+  top: 12%
+  left: 56%
+
+.alarmArea8
+  top: 22%
+  left: 60%
+
+.alarmArea9
+  top: 18%
+  left: 68%
+
+.alarmArea10
+  top: 19%
+  left: 80%

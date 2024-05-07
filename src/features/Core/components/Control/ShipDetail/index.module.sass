@@ -1,0 +1,63 @@
+@import utils
+@import "src/themeVariable"
+
+.wrapper
+  padding: 0 20px 20px 20px
+  font-size: 14px
+  height: 100%
+  color: $text-color
+  box-sizing: border-box
+  .topBox
+    .infoBox
+      line-height: 40px
+      .col
+        display: flex
+        border-bottom: solid 1px #08213c
+        box-sizing: border-box
+        .colLabel
+          width: 32%
+          text-align: right
+          background-color: #09457a
+          color: #fff
+        .colText
+          width: 68%
+          background-color: #052440
+          border: solid 1px #08213c
+          padding-left: 10px
+  .bottomBox
+    @extend .flexBetween
+    align-items: stretch
+    width: 100%
+    height: 70%
+    margin-top: 32px
+    .bottomLeft
+      height: 100%
+      width: 48%
+      .drawMap
+        height: 100%
+    .bottomRight
+      width: 48%
+      .warningBox
+        margin-bottom: 48px
+        .warnContent
+          display: flex
+          line-height: 40px
+
+/** 类table样式 */
+.rowCommon
+  background-color: rgba(14,55,110, .6)
+
+.rowTowCommon
+  background-color: #0b2c4f
+
+.labelRow
+  color: #fff
+  background-color: #0b579d
+
+.borderCol
+  display: flex !important
+  justify-content: center
+  align-items: center
+
+.detailContent
+  @extend .textEllipsis

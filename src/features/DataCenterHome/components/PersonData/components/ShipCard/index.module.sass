@@ -1,0 +1,57 @@
+.wrapper
+  display: flex
+  height: 100px
+
+.imgBox
+  padding: 4px
+  width: 25%
+  height: 80px
+  background-image: url('~images/situation/dark/important_medio_item.png')
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
+.content
+  flex: 1
+  cursor: pointer
+
+.img
+  position: relative
+  width: 80px !important
+  height: 80px !important
+  border: 1px solid #4470b9
+
+.info
+  display: flex
+  >div
+    font-size: 12px
+    &:nth-child(1)
+      margin-right: 4px
+      width: 80px
+      text-align: right
+      color: #accae8
+    &:nth-child(2)
+      width: 120px
+      text-align: left
+      color: #ffffff
+
+.video
+  width: 100%
+  height: 100%
+
+.closeAlt
+  position: absolute
+  top: 8px
+  left: 8px
+  padding: 4px 8px
+  font-size: 18px
+  color: #fff
+  opacity: 0
+  background-color: rgb(0 0 0 / 50%)
+  user-select: none
+  animation: closeAltAn 1s forwards 4s
+
+@keyframes closeAltAn
+  0%
+    opacity: 0
+  100%
+    opacity: 1

@@ -1,0 +1,161 @@
+@import "src/themeVariable"
+.container
+  width: 100%
+  max-height: 760px
+  overflow: hidden
+.videoWrapper
+  display: flex
+.video
+  width: 100%
+  height: 480px
+  object-fit: fill
+  box-sizing: border-box
+  cursor: pointer
+  position: relative
+  display: flex
+  flex-direction: column
+
+.videoRef
+  width: 100%
+  object-fit: fill
+.activeVideo
+  border: solid 2px #2f689e
+.bottom
+  width: 100%
+  height: 40px
+  background-color: rgba(14, 90, 155, 0.58)
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-right: 10px
+  box-sizing: border-box
+.arrow
+  color: $text-color1
+  cursor: pointer
+  transform: rotate(90deg)
+.showControlTools
+  display: flex
+  font-size: 14px
+  align-items: center
+  .targetInfos
+    span
+      margin-right: 10px
+.arrowDown
+  animation: showDownArrow 0.8s
+  transform: rotate(-90deg)!important
+
+.arrowUp
+  animation: showUpArrow 0.8s
+  transform: rotate(90deg)!important
+
+@keyframes showDownArrow
+  0%
+    transform: rotate(90deg)
+  100%
+    transform: rotate(-90deg)
+@keyframes showUpArrow
+  0%
+    transform: rotate(-90deg)
+  100%
+    transform: rotate(90deg)
+.noVideo
+  width: 100%
+  height: 360px
+  display: flex
+  justify-content: center
+  align-items: center
+
+//录制视频
+.recordVideo
+  position: absolute
+  top: 4px
+  right: 10px
+  z-index: 20
+  background: rgba(0,0,0,0.7)
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  padding: 4px 14px
+  color: #eeeeee
+  font-size: 14px
+  border-radius: 20px
+.stopVideo
+  width: 14px
+  height: 14px
+  display: inline-block
+  background: red
+  margin-right: 8px
+
+.bottomLeft
+  position: relative
+  .takeSuccess
+    position: absolute
+    top: -50px
+    width: 200px
+    z-index: 20
+.closeAlt
+  position: absolute
+  top: 8px
+  left: 8px
+  padding: 4px 8px
+  font-size: 18px
+  color: #fff
+  background-color: rgb(0 0 0 / 50%)
+  opacity: 0
+  animation: closeAltAn 1s forwards 4s
+  z-index: 999
+
+@keyframes closeAltAn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.locationBox
+  position: absolute
+  z-index: 19
+  top: 0
+  left: 0
+  right: 0
+  bottom: 24px
+
+.location
+  position: absolute
+  z-index: 9
+  background-color: $background-color-opacity
+  border: $border
+.timeCount
+  padding-top: 2px
+  padding-right: 2px
+  position: relative
+  font-size: 14px
+  text-align: right
+  .time
+    position: absolute
+    top: -30px
+    right: 30px
+    color: #fff
+.fullScreenControlTools
+  background: rgba(0, 0, 0, 0.2 )
+  position: absolute
+  right: 10px
+  bottom: 10px
+  z-index: 20
+  padding-top: 30px
+  width: 460px
+  height: 240px
+  user-select: none
+.title
+  color: #fff
+  position: absolute
+  left: 0
+  top: 0
+  height: 36px
+  line-height: 36px
+  width: 100%
+  padding-left: 20px
+  box-sizing: border-box
+  background: rgba(14, 55, 110, 0.2)
+  cursor: move
+.wrapper
+  padding: 0!important

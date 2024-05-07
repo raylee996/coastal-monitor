@@ -1,0 +1,70 @@
+@import "src/themeVariable"
+
+.wrapper
+  position: relative
+  height: 100%
+
+.charts
+  position: relative
+  height: 200px
+
+.title
+  height: 40px
+
+.titleSelect
+  @extend .title
+  display: flex
+
+.table
+  height: 520px
+  overflow: hidden
+
+.card
+  position: relative
+  height: 180px
+  background-image: url('~images/core/water_ship.png')
+  background-position: 80px 40px
+  background-repeat: no-repeat
+  background-size: 317px 83px
+
+.cardTitle
+  position: absolute
+  top: 30px
+  left: 180px
+  font-size: 18px
+  font-weight: bolder
+  background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.cardContent
+  position: absolute
+  display: flex
+  top: 72px
+  left: 180px
+
+.item
+  padding-right: 32px
+  &:nth-child(1)
+    .value
+      color: $text-color2
+    .label
+      color: #28e29a
+
+.value
+  padding-right: 12px
+  font-size: 27px
+  font-weight: bolder
+  color: $text-color
+
+.label
+  font-size: 16px
+  color: #ffa810
+
+.cardRadio
+  position: absolute
+  top: 0
+  left: 360px
+
+.image
+  cursor: pointer

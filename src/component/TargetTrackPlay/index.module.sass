@@ -1,0 +1,51 @@
+@import 'src'
+
+.wapper, .mapBox, .map
+  position: relative
+  height: 100%
+
+.wapper
+  width: 100%
+  .mapContentDef
+    height: 100%
+  .mapContentCtl
+    height: 100%
+
+.mapBox
+  z-index: 9
+
+.commonAbsolute
+  position: absolute
+  z-index: 19
+  background-color: rgba(37,58,75, .77)
+  left: 0
+
+.legend
+  @extend .commonAbsolute
+  top: 0
+  overflow-y: auto
+  max-height: 56vh
+  .checkboxRow
+    padding: 4px 6px
+    .legendName
+      color: #ffffff
+      padding-left: 6px
+      .img
+        width: 30px !important
+        height: 30px !important
+
+.ctrlPanel
+  @extend .commonAbsolute
+  right: 0
+  bottom: 0
+
+.startDot
+  padding: 4px 10px
+  background: rgba(235, 43, 43, 0.6)
+  color: #ffffff
+  white-space: nowrap
+.timeSpeedTag
+  width: 200px
+  height: 40px
+  color: #ffffff
+  padding: 4px 8px

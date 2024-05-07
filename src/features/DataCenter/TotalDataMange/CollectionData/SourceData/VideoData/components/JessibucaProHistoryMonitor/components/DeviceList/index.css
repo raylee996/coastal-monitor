@@ -1,0 +1,5 @@
+.RealTimeMonitor__DeviceList__tabs,
+.RealTimeMonitor__DeviceList__tabs .ant-tabs-content,
+.RealTimeMonitor__DeviceList__tabs .ant-tabs-tabpane {
+  height: 100%
+}

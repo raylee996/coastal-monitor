@@ -1,0 +1,42 @@
+.wapper
+    position: relative
+    width: 100%
+    height: 100%
+    .panelStatistics
+        // display: flex
+        .item
+            width: 100%
+            .title
+                position: relative
+                height: 30px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .txt
+                    font-size: 14px
+                .condi
+                    position: absolute
+                    right: 0
+                    padding: 8px
+            .content
+                // height: 300px
+                // overflow: auto
+                // .dataList
+                //     display: flex
+                //     align-items: center
+                //     .item
+                //         flex: 1
+                //         margin-bottom: 16px
+                //     .itemImg
+                //         width: 80px
+                //         text-align: center
+                height: calc(100% - 40px)
+                overflow: auto
+                width: 380px
+                // padding: 40px
+                box-sizing: border-box
+                .warnTotals
+                    height: 7px
+                    background-image: linear-gradient(90deg, rgba(79, 172, 254, 0.1) 0%, #00f2fe 100%)
+                    border-radius: 3px
+                    max-width: 160px

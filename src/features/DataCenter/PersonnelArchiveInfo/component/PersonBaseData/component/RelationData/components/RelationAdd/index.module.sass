@@ -1,0 +1,57 @@
+.wrapper
+    position: relative
+    padding: 8px
+    z-index: 30000
+    .row
+        display: inline-block
+        padding: 16px
+        .col
+            display: flex
+            flex-wrap: nowrap
+            justify-content: center
+            align-items: center
+            color: #a6cdff
+            .colLabel
+                width: 180px
+                padding: 8px
+                text-align: right
+            .colContent
+                flex: 1
+                padding: 8px
+                min-width: 280px
+                display: flex
+                flex-wrap: wrap
+            .userLists
+                width: 100%
+                padding: 8px 0
+                display: flex
+                flex-wrap: wrap
+
+            .btnCancel
+                margin-right: 16px
+.btnLine
+    padding: 16px 0
+.cardWrapper
+    position: relative
+    display: inline-block
+    padding: 8px
+    .title
+        width: 110px
+        height: 52px
+        line-height: 52px
+        text-align: center
+        background: url(../../../../../../../../../images/components/label_default.png) no-repeat
+        background-size: 100% 100%
+        cursor: pointer
+        color: #a6cdff
+        transition: 0.3s
+        &:hover
+            background: url(../../../../../../../../../images/components/label_selected.png) no-repeat
+            background-size: 100% 100%
+            color: #fff
+
+    .closeBtn
+        position: absolute
+        top: 8px
+        right: 12px
+        height: 8px

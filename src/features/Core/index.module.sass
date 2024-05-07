@@ -1,0 +1,205 @@
+@import 'src/themeVariable'
+
+.wrapper
+  position: relative
+  width: 100%
+  height: 100%
+  color: #a6cdff
+  .wrapperContent
+    width: 100%
+    height: 100%
+  .map
+    position: relative
+    z-index: 9
+    width: 100%
+    height: 100%
+  .tools
+    position: absolute
+    z-index: 19
+    left: 25%
+    bottom: 0
+    width: 50%
+    background-color: #eee
+  .layerBox
+    position: absolute
+    z-index: 19
+    top: 10px
+    right: 10px
+  .btnPopup
+    position: fixed
+    top: 50%
+    left: 10px
+    z-index: 999
+
+.commonRightBottomIcon
+  position: absolute
+  z-index: 19
+  right: 8px
+  cursor: pointer
+  width: 39px
+  height: 39px
+  >img
+    width: 39px
+    height: 39px
+
+.autoJudgmentIcon
+  @extend .commonRightBottomIcon
+  bottom: 120px
+
+.arrangeDispatch
+  @extend .commonRightBottomIcon
+  bottom: 90px
+  >img
+    box-sizing: border-box
+    padding: 8px
+
+.mapSelect
+  position: absolute
+  z-index: 16
+  bottom: 8px
+  right: 8px
+.situationalAnalysis
+  position: absolute
+  z-index: 19
+  top: 64px
+  left: 8px
+
+.toolbox
+  position: absolute
+  z-index: 19
+  top: 64px
+  right: 8px
+
+.funMenu
+  position: absolute
+  z-index: 19
+  top: 90px
+  left: 0
+
+.searchBox
+  position: absolute
+  display: flex
+  z-index: 19
+  top: 100px
+  right: 58px
+
+.search
+  display: flex
+  width: 400px
+  height: 40px
+  background-color: rgb(18 29 40 / 58%)
+  border-radius: 8px
+
+.searchInp
+  border: none !important
+  backdrop-filter: blur(2px)
+  &:focus
+    box-shadow: none
+
+.searchIcon
+  width: 40px
+  height: 40px
+  color: #fff !important
+
+.warnTool
+  position: absolute
+  display: flex
+  z-index: 29
+  top: 60px
+  right: 8px
+  font-size: 14px
+  font-weight: bold
+
+.warnToolHide
+  animation: warnHideAn 3s forwards
+
+@keyframes warnHideAn
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+.historyTrackCtrlBox
+  position: absolute
+  z-index: 29
+  bottom: 80px
+  left: calc( 50% - 400px )
+  width: 800px
+  height: 300px
+
+.historyTrackCtrl
+  top: 0 !important
+  left: 0 !important
+  width: 100% !important
+  height: 100% !important
+  user-select: none
+
+.searchResult
+  position: absolute
+  top: 40px
+  left: 0
+  width: 100%
+  min-height: 100px
+  max-height: 500px
+  overflow-y: auto
+  background-color: rgb(18 29 40 / 58%)
+  border-radius: 8px
+  backdrop-filter: blur(2px)
+
+.resultCard
+  height: 30px
+  line-height: 30px
+  text-indent: 8px
+  font-size: 14px
+  cursor: pointer
+  &:hover
+    background-color: rgb(18 29 40 / 58%)
+
+.mapToolBox
+  position: absolute
+  z-index: 19
+  top: 100px
+  right: 14px
+  width: 40px
+  height: 40px
+  line-height: 40px
+  text-align: center
+  user-select: none
+  background: rgba(0,0,0,0.3)
+  cursor: pointer
+  border-radius: 4px
+.mapToolIcon
+  font-size: 24px
+  width: 20px
+  height: 18px
+  vertical-align: middle
+.toolIon
+  font-size: 6px
+  margin-left: 2px
+.mapToolcont
+  position: absolute
+  z-index: 19
+  top: 142px
+  right: 14px
+  width: 40px
+  background: rgba(0,0,0,0.3)
+  padding-top: 6px
+  padding-bottom: 6px
+  box-sizing: border-box
+
+.WarnContentLow
+  color: #F4FB34
+
+.WarnContentMid
+  color: #FFA517
+
+.WarnContentHig
+  color: #ff2f25
+
+.warnAudio
+  position: relative
+  z-index: -1
+  width: 0
+  height: 0
+  overflow: hidden
+  visibility: hidden

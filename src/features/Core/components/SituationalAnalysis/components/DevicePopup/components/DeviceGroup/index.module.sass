@@ -1,0 +1,38 @@
+.wrapper
+  margin: 4px 0
+  max-height: 100px
+  overflow-x: hidden
+  overflow-y: auto
+
+.row
+  display: flex
+  height: 36px
+  line-height: 36px
+  cursor: pointer
+  user-select: none
+  &:hover
+    background-image: linear-gradient(to right, rgb(41, 102, 155), rgb(19, 59, 104))
+    &:after
+      content: '\f101'
+      display: block
+      margin: 0 4px
+      font: normal normal normal 14px/1 FontAwesome
+      font-size: 18px
+      color: #59bdff
+      line-height: 36px
+
+.state
+  padding: 0 8px
+  font-size: 14px
+
+.name
+  flex: 1
+  font-size: 14px
+  font-weight: bolder
+  background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: #fff
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap

@@ -1,0 +1,40 @@
+@import "src/themeVariable"
+@import utils
+
+$border-08213c: solid 1px rgb(8 33 60 / 68%)
+
+.content
+  >header
+    font-size: 14px
+    color: $text-color2
+
+.box
+  border: $border-08213c
+  background-color: rgb(14 90 155 / 58%)
+
+.row
+  display: flex
+  height: 38px
+  line-height: 38px
+  border-top: $border-08213c
+  &:nth-child(1)
+    border-top: none
+
+.item
+  display: flex
+  width: 50%
+
+.label
+  padding-right: 4px
+  width: 60px
+  text-align: right
+  font-size: 12px
+  color: $text-color2
+  border-right: $border-08213c
+
+.value
+  flex: 1
+  text-indent: 4px
+  font-size: 12px
+  color: $text-color
+  @extend .textEllipsis

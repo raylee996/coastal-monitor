@@ -1,0 +1,121 @@
+@import utils
+
+.wrapper
+  height: 100%
+  .tabs
+    display: flex
+    height: 36px
+    line-height: 36px
+    box-sizing: border-box
+    font-size: 14px
+    color: #6ea4d1
+    cursor: pointer
+    .tabsItem
+      width: 88px
+      margin: 0 14px
+      height: 100%
+      text-align: center
+      z-index: 10
+      box-sizing: border-box
+    .active
+      border-bottom: 1px solid #fff
+      color: #fff
+  .content
+    margin-top: 10px
+    height: calc( 100% - 32px )
+    .dispatch
+      height: 100%
+      @extend .flexBetween
+      flex-wrap: wrap
+      align-items: stretch
+      overflow-y: auto
+      .itemBox
+        width: 45.5%
+        height: 28%
+        margin-bottom: 1%
+        padding: 2%
+        background-image: url(~images/core/entryExitRecords/even.png)
+        background-size: 100% 100%
+        background-repeat: no-repeat
+        .itemContent
+          width: 100%
+          height: 84%
+          background-color: #050d17
+          border: solid 1px #0a6eab
+          position: relative
+          font-size: 12px
+          .common
+            width: 100%
+            text-align: center
+            color: #fff
+          .topBox
+            position: absolute
+            top: 0
+            right: 0
+            @extend .common
+            @extend .flexBetween
+            flex-direction: row-reverse
+            line-height: 24px
+            .commonPadding
+              width: 24%
+            .status
+              @extend .commonPadding
+            .freeBg
+              background-color: #1ce694
+            .dispatchBg
+              background-color: #fbb51f
+            .name
+              @extend .commonPadding
+              background-color: #0a6eab
+            .time
+              padding-left: 2px
+          .middleBox
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            .soundWave
+              width: 112px
+              height: 19px
+              background-image: url(~images/core/wisdomCommand/soundWave.png)
+              background-size: 100% 100%
+              background-repeat: no-repeat
+              margin-bottom: 6px
+            .soundIcon
+              margin: 0 40px
+              width: 32px
+              height: 32px
+              line-height: 32px
+              text-align: center
+              // 背景渐变
+              border: 1px dashed
+              border-image: linear-gradient(to bottom, #fff 0%, #59bdff 100%) 1
+              clip-path: inset(0 round 16px)
+              .icon
+                background-image: linear-gradient(to bottom, #fff 0%, #59bdff 100%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+            .status
+              width: 50px
+              height: 37px
+              line-height: 37px
+              border: dashed 1px #0a6eab
+              text-align: center
+        .btnBox
+          width: 100%
+          height: 16%
+          @extend .flexBetween
+    .table
+      padding: 0 10px
+      height: 100%
+      overflow-y: auto
+      font-size: 12px
+
+.first_bg
+  background-repeat: no-repeat
+  background-size: 150% 110%
+  background-image: url(~images/core/entryExitRecords/firstActive.png)
+.second_bg
+  background-repeat: no-repeat
+  background-size: 150% 110%
+  background-image: url(~images/core/entryExitRecords/secondActive.png)

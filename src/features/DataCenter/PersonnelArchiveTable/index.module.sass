@@ -1,0 +1,90 @@
+$cols: 9 // 列数
+$marginWidth: 16px // 间隔
+
+.wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    .table
+        height: calc( 100% - 80px )
+       
+// 人员列表 Card
+.gallery
+    margin-right: $marginWidth
+    margin-bottom: 16px
+    width: calc((100% - #{($cols - 1) * $marginWidth}) / #{$cols})
+    min-height: 220px
+    text-align: center
+    transition: 0.3s
+    &:hover
+        transform: scale(1.02)
+    .galleryImg
+        position: relative
+        width: 174px
+        height: 240px
+        .imgEcheckBox
+            position: absolute
+            top: 2px
+            left: 6px
+            z-index: 200
+        .state
+            position: absolute
+            top: 2px
+            right: 2px
+            width: 60px
+            height: 24px
+            line-height: 24px
+            text-align: center
+            background-color: #0a6eab
+            color: #fff
+            font-size: 12px
+            z-index: 200
+        .boxImg
+            width: 100%
+            height: 174px
+            border: solid 1px #0a6eab
+            padding: 1px
+            box-sizing: border-box
+            cursor: pointer
+        .imgs
+            width: 100%
+        .galleryImTool
+            position: relative
+            width: 100%
+            height: 40px
+            line-height: 40px
+            background: #0f3e6f
+            color: #fff
+            font-size: 14px
+            z-index: 200
+            .peopleType
+                position: absolute
+                left: 1px
+                top: 0
+                width: 110px
+                height: 40px
+                line-height: 40px
+                padding-left: 10px
+                text-align: left
+                color: #fff
+                cursor: pointer
+                text-overflow: hidden
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+            .operation
+                position: absolute
+                right: 0
+                top: 0
+                .operBtn
+                    display: inline-block
+                    font-size: 14px
+                    margin-right: 8px
+                    height: 16px
+                    line-height: 16px
+
+    .galleryName
+        text-align: center
+        padding: 4px 0
+.delMarginLeft
+    margin-right: 0

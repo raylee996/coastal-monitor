@@ -1,0 +1,25 @@
+@import utils
+
+.wrapper
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  color: #a6cdff
+  .imgBox
+    width: 40%
+  .basisContent
+    flex: 1
+    padding-left: 16px
+    height: 100%
+    box-sizing: border-box
+    @extend .textEllipsis
+    .basisItem
+      line-height: 32px
+  .btnBox
+    margin-top: 10px
+
+.flexBox
+  // @extend .flexBetween
+  width: 100% !important
+  .item
+    width: 50%

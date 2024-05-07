@@ -1,0 +1,79 @@
+@import utils
+@import "src/themeVariable"
+
+.wrapper
+  height: 100%
+  padding: 20px 10px
+  font-size: 12px
+  color: $text-color
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  .card
+    .cardBetween
+      @extend .flexBetween
+      align-items: stretch
+      .image
+        width: 180px
+        height: 140px
+      .cardRight
+        flex: 1
+        margin-left: 20px
+        .title
+          color: #fff
+  .tableLabel
+    margin: 10px 0
+    color: #fff
+  .tableWrapper
+    flex: 1
+    height: 500px
+
+.detailWrapper
+  margin-bottom: 0 !important
+
+.cardWrapper
+  border-top: 1px solid rgba(50,110,145, .2)
+  padding: 8px
+  >div
+    padding-top: 6px
+.detailLine
+  margin-bottom: 10px
+
+.infoWrapper
+  font-size: 12px
+  width: 500px
+  color: red
+
+.contentBox
+  font-size: 12px
+  background-image: url(~images/commonBox/content_box.png)
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  .recordsBox
+    @extend .cardWrapper
+    padding: 8px
+    margin-bottom: 2px
+    .label
+      padding-top: 4px
+      border-bottom: 1px solid #326e91
+      margin-bottom: 10px
+    .dashed_border
+      border-bottom: dashed 1px #326e91
+    .content
+      display: flex
+      align-items: stretch
+      padding-bottom: 4px
+      .image
+        width: 65px
+        height: 43px
+        cursor: pointer
+      .text
+        padding-left: 10px
+        >div
+          padding-bottom: 4px
+
+.startDot
+   padding: 4px 10px
+   background: rgba(235, 43, 43, 0.6)
+   color: #ffffff
+   white-space: nowrap

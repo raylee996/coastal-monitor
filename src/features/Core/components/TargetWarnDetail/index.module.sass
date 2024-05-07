@@ -1,0 +1,46 @@
+@import "src"
+
+.wrapper
+  position: relative
+  padding: 16px
+  .title
+    color: #fff
+.content
+  height: 540px
+  .box
+    max-height: 500px
+    overflow-y: auto
+  .loading
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.card
+  display: flex
+  padding: 8px
+  margin: 16px
+  border-bottom: solid 1px $border-color
+
+
+.img
+  margin-right: 16px
+  width: 60px
+  height: 60px
+
+.info
+  &>div
+    height: 30px
+    line-height: 30px
+    font-size: 14px
+
+.itemWrapper
+  white-space: nowrap
+  color: red
+
+
+.startDot
+  padding: 4px 10px
+  background: rgba(235, 43, 43, 0.6)
+  color: #ffffff
+  white-space: nowrap

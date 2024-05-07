@@ -1,0 +1,237 @@
+@import 'src'
+
+.wrapper
+  position: relative
+  display: flex
+  height: 100%
+  .videoList
+    flex: 1
+    .content
+      position: relative
+      // height: calc( 100% - 50px )
+      height: 100%
+      overflow: hidden
+      box-sizing: border-box
+    .listSelect
+      padding: 10px
+      height: 50px
+      box-sizing: border-box
+      .selectImg
+        margin-right: 8px
+        width: 30px
+        height: 30px
+        cursor: pointer
+  .panel
+    width: 200px
+    color: #a6cdff
+    font-size: 14px
+    .listPanel
+      height: calc( 100% - 254px )
+    .listPanelOnly
+      height: 100%
+    .step
+      padding: 0 4px
+      height: 34px
+      line-height: 34px
+      overflow: hidden
+    .controlPanel
+      box-sizing: border-box
+      padding: 10px 0
+      height: 160px
+      overflow: hidden
+    .optionPanel
+      height: 60px
+
+.light
+  display: flex
+  padding: 0 2px
+
+.lightBut
+  flex: 1
+  text-align: center
+  border-radius: 4px
+  cursor: pointer
+  user-select: none
+
+.lightButAct
+  @extend .lightBut
+  color: #fff
+  background-color: $primary-color
+
+.videoBox
+  position: relative
+
+.content1
+  .videoBox
+    width: 100%
+    height: 100%
+
+.content2
+  .videoBox
+    width: 100%
+    height: 50%
+
+.content3
+  .videoBox
+    float: left
+    &:nth-child(1)
+      width: 100%
+      height: 50%
+    &:nth-child(2)
+      width: 50%
+      height: 50%
+    &:nth-child(3)
+      width: 50%
+      height: 50%
+
+.content4
+  .videoBox
+    float: left
+    width: 50%
+    height: 50%
+
+.content6Other
+  position: absolute
+  width: 33.33%
+  height: 33.33%
+
+.content6
+  .videoBox
+    &:nth-child(1)
+      width: 66.66%
+      height: 66.66%
+    &:nth-child(2)
+      top: 0
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(3)
+      top: 33.33%
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(4)
+      top: 66.66%
+      left: 0
+      @extend .content6Other
+    &:nth-child(5)
+      top: 66.66%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(6)
+      top: 66.66%
+      left: 66.66%
+      @extend .content6Other
+
+.content9
+  .videoBox
+    &:nth-child(1)
+      top: 0
+      left: 0
+      @extend .content6Other
+    &:nth-child(2)
+      top: 0
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(3)
+      top: 0
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(4)
+      top: 33.33%
+      left: 0
+      @extend .content6Other
+    &:nth-child(5)
+      top: 33.33%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(6)
+      top: 33.33%
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(7)
+      top: 66.66%
+      left: 0
+      @extend .content6Other
+    &:nth-child(8)
+      top: 66.66%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(9)
+      top: 66.66%
+      left: 66.66%
+      @extend .content6Other
+
+.content16Other
+  position: absolute
+  width: 25%
+  height: 25%
+
+.content16
+  .videoBox
+    //第一行
+    &:nth-child(1)
+      top: 0
+      left: 0
+      @extend .content16Other
+    &:nth-child(2)
+      top: 0
+      left: 25%
+      @extend .content16Other
+    &:nth-child(3)
+      top: 0
+      left: 50%
+      @extend .content16Other
+    &:nth-child(4)
+      top: 0
+      left: 75%
+      @extend .content16Other
+    //第二行
+    &:nth-child(5)
+      top: 25%
+      left: 0
+      @extend .content16Other
+    &:nth-child(6)
+      top: 25%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(7)
+      top: 25%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(8)
+      top: 25%
+      left: 75%
+      @extend .content16Other
+    //第三行
+    &:nth-child(9)
+      top: 50%
+      left: 0
+      @extend .content16Other
+    &:nth-child(10)
+      top: 50%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(11)
+      top: 50%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(12)
+      top: 50%
+      left: 75%
+      @extend .content16Other
+    //第四行
+    &:nth-child(13)
+      top: 75%
+      left: 0
+      @extend .content16Other
+    &:nth-child(14)
+      top: 75%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(15)
+      top: 75%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(16)
+      top: 75%
+      left: 75%
+      @extend .content16Other

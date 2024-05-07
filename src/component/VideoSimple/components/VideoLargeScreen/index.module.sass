@@ -1,0 +1,78 @@
+@import "themeVariable"
+
+.videoAlt
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  background-color: rgba(0, 0, 0, .8)
+  font-size: 12px
+
+.video_text
+  padding-top: 20%
+  width: 100%
+  height: 100%
+  line-height: 20px
+  text-align: center
+  box-sizing: border-box
+
+.videoBox
+  width: 100%
+  height: 100%
+  position: relative
+  color: $text-color
+  .video
+    display: block
+    width: 100%
+    height: 100%
+    box-sizing: border-box
+    object-fit: fill
+    position: absolute
+    bottom: 0
+    left: 0
+  .tools
+    position: absolute
+    padding: 4px 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(0, 0, 0, .4)
+    color: $text-color
+    .btnTools
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 12px
+      .multiSegment
+        flex: 1
+      .icon
+        color: $text-color
+      .speed
+        margin-left: 4px
+        width: 100px
+    .progress
+      padding: 0 20px
+  .reset
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .icon
+      width: 48px
+      height: 48px
+      color: $text-color
+      font-size: 48px
+
+.iconBox
+  position: absolute
+  top: calc(50%)
+  left: calc(50%)
+  transform: translate(-50%, -50%)
+  .icon
+    font-size: 28px
+    color: $text-color

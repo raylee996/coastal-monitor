@@ -1,0 +1,35 @@
+@import utils
+@import 'src'
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+  padding: 10px 0 20px 20px
+  box-sizing: border-box
+  color: $text-color4
+  .header
+    display: flex
+    line-height: 32px
+    padding: 10px 0
+    .input
+      width: 50%
+      margin-right: 10px
+  .content
+    padding: 10px 0
+    flex: 1
+    overflow-y: auto
+    display: flex
+    flex-wrap: wrap
+    .box
+      width: 23.5%
+      margin-right: 1.5%
+      margin-bottom: 20px
+      font-size: 12px
+      line-height: 24px
+      .text
+        @extend .textEllipsis
+      .delBtn
+        color: $error-color
+  .footer
+    margin: 0 auto

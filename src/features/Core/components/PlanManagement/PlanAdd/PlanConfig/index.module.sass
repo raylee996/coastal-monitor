@@ -1,0 +1,56 @@
+@import "themeVariable"
+.wrapper
+    width: 100%
+    height: 100%
+    position: relative
+    .map
+        width: 100%
+        height: 100%
+.configPane
+    width: 500px
+    height: 98%
+    position: absolute
+    left: 10px
+    top: 10px
+    bottom: 10px
+    background: rgba(7, 32, 55, 0.9)
+    z-index: 999
+    display: flex
+    flex-direction: column
+    padding: 10px
+    box-sizing: border-box
+    .preview
+        height: 300px
+        border-bottom: $border
+        overflow-y: auto
+        overflow-x: hidden
+    .config
+        flex: 1
+        padding-top: 20px
+        padding-right: 20px
+        box-sizing: border-box
+        max-height: 500px
+        overflow-y: auto
+
+    .bottom
+        height: 50px
+        line-height: 50px
+        text-align: center
+        width: 100%
+.itemForm
+    width: 100%
+    height: auto
+    .itemFormTitle
+        display: flex
+        justify-content: space-between
+        align-content: center
+        align-items: center
+        margin-left: 20px
+        border-bottom: $border-dashed
+        .titleLeft
+            display: flex
+            span
+                margin-left: 4px
+.activeItem
+    border: dashed 1px #FFA517
+    padding-right: 20px

@@ -1,0 +1,32 @@
+@import utils
+
+.wrapper
+  @extend .flexBetween
+  height: 99%
+  padding: .5%
+  overflow: hidden
+  .areaBox
+    width: 31%
+    height: 100%
+    overflow-y: auto
+  .drawMapBox
+    position: relative
+    width: 68%
+    height: 100%
+    .drawMap
+      position: relative
+      height: 100%
+    .addBox
+      position: absolute
+      top: 10px
+      left: 10px
+      z-index: 500
+      display: flex
+      .primaryBtn
+        margin: 0 6px
+
+.editBtn
+  margin-right: 8px
+  color: var(--ant-primary-color)
+.delBtn
+  color: var(--ant-error-color)

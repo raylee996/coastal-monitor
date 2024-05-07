@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="coastal web" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font-icon -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/font-icon/iconfont.css">
+
+  <!-- leaflet 地图库 -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/leaflet/leaflet.css" />
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet.js"></script>
+
+  <!-- leaflet 插件 -->
+  <script src="%PUBLIC_URL%/assets/leaflet/proj4-src.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/proj4leaflet.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/gcoord.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/leaflet/Control.MiniMap.min.css">
+  <script src="%PUBLIC_URL%/assets/leaflet/Control.MiniMap.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet-tracksymbol.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet.ChineseTmsProviders.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet.mapCorrection.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/MovingMarker.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/leaflet/leaflet-geoman.min.css">
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet-geoman.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/L.CanvasLayer.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/t-wkt.umd.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet.tilelayer.fallback-src.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/leaflet/leaflet-ruler.css">
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet-ruler.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/leaflet/L.Control.MousePosition.css">
+  <script src="%PUBLIC_URL%/assets/leaflet/L.Control.MousePosition.js"></script>
+  <script src="%PUBLIC_URL%/assets/leaflet/leaflet.polylineDecorator.js"></script>
+  <script src="%PUBLIC_URL%/assets/Leaflet.ImageOverlay.Rotated-by-Two-Markers.js"></script>
+
+  <!-- 播放器插件 -->
+  <script src="%PUBLIC_URL%/assets/player/flv.js"></script>
+  <script src="%PUBLIC_URL%/assets/player/hls.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/player/ZLMRTCClient.js"></script>
+  <script src="%PUBLIC_URL%/assets/player/jessibuca/jessibuca.js"></script>
+  <script src="%PUBLIC_URL%/assets/player/jessibucaProDemo/jessibuca-pro-demo.js"></script>
+
+  <!-- 其他库 -->
+  <script src="%PUBLIC_URL%/assets/axios.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/crypto-js.js"></script>
+  <script src="%PUBLIC_URL%/assets/mock.js"></script>
+  <script src="%PUBLIC_URL%/assets/turf.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/qs.js"></script>
+  <script src="%PUBLIC_URL%/assets/echarts.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/echarts-gl.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/svga.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/jquery.js"></script>
+  <script src="%PUBLIC_URL%/assets/jquery.jsonp.js"></script>
+  <script src="%PUBLIC_URL%/assets/qca_pki_sdk.js"></script>
+  <!-- <script src="%PUBLIC_URL%/assets/szca_crypto.js"></script>
+  <script src="%PUBLIC_URL%/assets/Base64.js"></script> -->
+
+  <!-- 截屏 -->
+  <script src="%PUBLIC_URL%/assets/screenShotPlugin.umd.js"></script>
+
+  <title>南山边海防</title>
+
+  <style>
+    #screenShotContainer,
+    #toolPanel,
+    #optionIcoController,
+    #optionPanel,
+    #cutBoxSizePanel,
+    #textInputPanel {
+      z-index: 99999999;
+    }
+
+    #screenShot {
+      display: none;
+    }
+  </style>
+  <script>
+    const BASE_URL = '%REACT_APP_BASE_URL%';
+    const TOKEN_KEY = '%REACT_APP_HEADER_TOKEN_KEY%';
+    const WEBSOCKET_URL = '%REACT_APP_WEBSOCKET_URL%'
+    const NODE_ENV = '%NODE_ENV%';
+    if (NODE_ENV === 'production') {
+      console.debug = () => { }
+    }
+
+    // 预警声音资源地址
+    const warningMp3Src = "%PUBLIC_URL%/other/warning.mp3"
+
+    // 截图
+    function changeScreenShot() {
+      new screenShotPlugin({ clickCutFullScreen: true, enableWebRtc: true })
+    }
+  </script>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <button id="screenShot" onclick='changeScreenShot()'> 点击截图 </button>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>

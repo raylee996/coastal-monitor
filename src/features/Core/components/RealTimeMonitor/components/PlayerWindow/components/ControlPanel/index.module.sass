@@ -1,0 +1,77 @@
+@import 'src/themeVariable'
+
+.wrapper
+  user-select: none
+  width: 440px
+
+.header
+  text-indent: 4px
+  height: 30px
+  line-height: 30px
+  font-size: 14px
+  color: $text-color2
+  background-color: $background-color-opacity
+  cursor: move
+
+.content
+  display: flex
+  padding: 20px 8px
+  background-color: rgb(0 0 0 / 40%)
+  .actions
+    flex: 1
+    margin-left: 10px
+
+.stepRow
+  background-color: rgb(0 0 0 / 40%)
+
+.light
+  display: flex
+  padding: 0 2px
+
+.lightBut
+  flex: 1
+  text-align: center
+  border-radius: 4px
+  cursor: pointer
+  user-select: none
+
+.lightButAct
+  @extend .lightBut
+  color: #fff
+  background-color: $background-color
+
+.actionLabel
+  display: inline-block
+  width: 44px
+  height: 24px
+  line-height: 24px
+  text-align: center
+  color: $text-color
+
+.stepBox
+  display: flex
+
+.stepSlider
+  flex: 1
+  margin-left: 0
+  margin-right: 0
+
+.stepInputNumber
+  margin-top: 6px
+  margin-left: 4px
+  margin-right: 4px
+  width: 56px
+  height: 24px
+
+.stepLabel
+  line-height: 32px
+  text-indent: 4px
+
+.takeSuccess
+  position: absolute
+  top: -50px
+  width: 200px
+  z-index: 9999
+
+.actionRow
+  margin-bottom: 20px

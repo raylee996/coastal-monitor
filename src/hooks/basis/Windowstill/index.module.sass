@@ -1,0 +1,68 @@
+
+.wrapper
+  position: absolute
+  border-radius: 10px
+  overflow: hidden
+  min-width: 430px
+  min-height: 264px
+
+.header
+  position: relative
+  display: flex
+  height: 40px
+  line-height: 40px
+  cursor: move
+  background-color: #ffffff
+  border-bottom: 1px solid #eee
+  box-sizing: border-box
+
+.title
+  flex: 1
+  text-indent: 10px
+  font-weight: bold
+  font-size: 16px
+  color: #333
+
+.titleText
+  cursor: text
+
+.actions
+  width: auto
+  padding-right: 6px
+  pointer-events: auto
+
+.actions
+  width: auto
+  padding-right: 6px
+  pointer-events: auto
+
+.actionsButton
+  width: 30px !important
+  height: 30px !important
+
+.close
+  @extend .actionsButton
+
+.min
+  @extend .actionsButton
+
+.content
+  min-height: 100px
+  height: calc(100% - 40px)
+  background-color: #ffffff
+  overflow: auto
+
+.resize
+  width: 10px
+  height: 10px
+  position: absolute
+  bottom: 0
+  right: 0
+  background: red
+  cursor: nwse-resize
+
+.customHeader
+  position: relative
+  display: inline-block
+  z-index: 9
+  width: 100%

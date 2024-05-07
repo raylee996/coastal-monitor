@@ -1,0 +1,22 @@
+.webgis__layer_HtmlPopup {
+  bottom: 0 !important;
+  left: 0 !important;
+  margin-bottom: 0;
+}
+
+.webgis__layer_HtmlPopup .leaflet-popup-content-wrapper {
+  padding: 0;
+  background: none;
+  color: initial;
+  box-shadow: none;
+}
+
+.webgis__layer_HtmlPopup .leaflet-popup-content {
+  margin: 0;
+  width: auto !important;
+  transform: translateX(-50%)
+}
+
+.webgis__layer_HtmlPopup .leaflet-popup-tip-container {
+  display: none;
+}

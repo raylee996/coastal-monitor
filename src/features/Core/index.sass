@@ -1,0 +1,60 @@
+
+.core-tabs-card>.ant-tabs-nav
+
+    .ant-tabs-tab
+        padding: 5px 10px 1px 10px!important
+        box-sizing: border-box
+    &::before
+        border-bottom: 2px solid
+        border-image: linear-gradient(90deg, rgba(89, 189, 255, 1) 0%, rgba(89, 189, 255, 0) 100%) 2 2 2 2
+    .ant-tabs-tab-active,.ant-tabs-tab
+        background: none !important
+        border-bottom: none !important
+        border-radius: 4px 4px 0 0
+        padding: 5px 10px 1px 10px!important
+        box-sizing: border-box
+    .ant-tabs-tab
+        // border: 1px solid #06233e
+        border: 0px solid #59bdff !important
+        .ant-tabs-tab-btn
+            padding-bottom: 8px
+            border-bottom: 0px solid #06233e
+    .ant-tabs-tab-btn:active
+        color: #9cc1f0 !important
+    .ant-tabs-tab-active
+        border: 1px solid #59bdff !important
+        border-bottom: 1px solid #06233e !important
+        .ant-tabs-tab-btn
+            color: #fff !important
+            padding-bottom: 8px
+            border-bottom: 1px solid #fff !important
+            box-sizing: border-box
+
+    .ant-tabs-tab:hover
+        color: #fff !important
+    .ant-tabs-ink-bar
+        background: rgba(89, 189, 255, 1) !important
+.core-tabs-card>.ant-tabs-content-holder
+    box-sizing: border-box
+    position: relative !important
+    padding: 6px
+    &::before
+        position: absolute
+        top: 23px
+        transform: translatey(-40%)
+        left: 0px
+        content: ''
+        width: 1px
+        height: 100px
+        background-image: linear-gradient(to bottom, rgba(89, 189, 255, 1) , rgba(89, 189, 255, 0))
+.core-tabs-card
+    .ant-checkbox-group
+        width: 100%
+    .ant-checkbox-group-item
+        width: 33.33%
+        margin-inline-start: initial
+    .ant-checkbox-wrapper
+        margin-bottom: 10px
+        font-size: 12px
+    .ant-tabs-nav-list
+        transform: none !important

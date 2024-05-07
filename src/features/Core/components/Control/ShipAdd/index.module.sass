@@ -1,0 +1,29 @@
+@import utils
+
+.paddingLeft
+  margin-left: 6%
+  .flexCheckbox
+    @extend .flexBetween
+    line-height: 40px
+    padding: 0 50px
+
+.wrapper
+  @extend .flexBetween
+  height: 100%
+  overflow: hidden
+  padding: 16px
+  box-sizing: border-box
+  .addForm
+    width: 100%
+    height: 100%
+    // padding: 30px 20PX
+    overflow-y: auto
+    .checkbox
+      // padding-left: 6%
+      margin-bottom: 20px
+    .formBtn
+      @extend .paddingLeft
+      margin-top: 20px
+      text-align: center
+      .btnCancel
+        margin-right: 12px

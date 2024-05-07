@@ -1,0 +1,60 @@
+.wrapper
+  position: absolute
+  display: inline-block
+  // z-index: 29
+  top: 160px
+  left: 60px
+  width: 400px
+  height: 720px
+  >section
+    padding: 10px
+    height: calc( 100% - 60px )
+    box-sizing: border-box
+
+.wrapperLarge
+  @extend .wrapper
+  top: 70px
+  left: 50px
+  bottom: 20px
+  right: 20px
+  width: auto
+  height: auto
+
+.header
+  position: relative
+  z-index: 9
+  margin-top: 20px
+  margin-left: 10px
+  margin-right: 10px
+  height: 40px
+  line-height: 42px
+  box-sizing: border-box
+  >img
+    margin: 0 4px
+    vertical-align: middle
+  >span
+    font-size: 16px
+    font-weight: bolder
+    background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.headerContent
+  position: relative
+  z-index: 6
+
+.headerImg
+  vertical-align: middle
+
+.off
+  float: right
+  width: 40px
+  height: 40px
+  line-height: 40px
+  font-size: 24px
+  color: #59bdff
+  text-align: center
+  cursor: pointer
+  user-select: none
+  &:hover
+    font-size: 26px

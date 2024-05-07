@@ -1,0 +1,158 @@
+.wrapper
+  position: absolute
+  width: 100%
+  height: 60px
+  overflow: hidden
+  background: none
+  z-index: 21
+
+.content
+  position: relative
+  z-index: 9
+  width: 100%
+  height: 60px
+  overflow: hidden
+  background-size: cover
+
+.nav
+  position: absolute
+  display: flex
+  top: 0
+  left: 50%
+  transform: translate(-50%, 0)
+  cursor: pointer
+
+.item
+  margin: 0 16px
+  height: 60px
+  line-height: 60px
+  .menuName
+    font-weight: normal
+    letter-spacing: 2px
+    font-size: 20px
+    color: #4890d3
+  .menuIcon
+    color: #4890d3
+    transform: rotate(-90deg)
+  .menuNamewhite
+    font-weight: normal
+    letter-spacing: 2px
+    font-size: 20px
+    color: #bfdcff
+  .menuIconwhite
+    color: #bfdcff
+    transform: rotate(-90deg)
+
+.itemActive
+  @extend .item
+  .menuName
+    font-weight: 600
+    color: transparent
+    background: linear-gradient(to bottom, #ffffff, #59bdff)
+    background-clip: text
+  .menuIcon
+    color: #acdeff
+    transform: rotate(90deg)
+.itemActivewhite
+  @extend .item
+  .menuNamewhite
+    font-weight: 600
+    color: transparent
+    background: linear-gradient(to bottom, #ffffff, #00f0ff)
+    background-clip: text
+  .menuIconwhite
+    color: #00f0ff
+    transform: rotate(90deg)
+.box
+  position: absolute
+  display: flex
+  top: 0
+  right: 0
+  padding: 0 8px
+  height: 100%
+  color: #d5e4fa
+
+.date
+  padding: 0 8px
+  line-height: 64px
+
+.personInfo
+  padding: 12px 8px
+  height: 60px
+  line-height: 30px
+  cursor: pointer
+
+.personName
+  margin-left: 8px
+  color: #d5e4fa
+
+.notice
+  position: relative
+  display: inline-block
+  margin-right: 8px
+
+.noticeDot
+  position: absolute
+  top: 0
+  right: 0
+  width: 8px
+  height: 8px
+  border-radius: 8px
+  background-color: #f5222d
+
+.backgroundImgs
+  position: absolute
+  display: flex
+  z-index: -1
+  top: -2px
+  left: 0
+  width: 100%
+  height: 80px
+  overflow: hidden
+  >img
+    &:nth-child(1)
+      height: 83px
+      backdrop-filter: blur(1px)
+    &:nth-child(2)
+      flex: 1
+      height: 60px
+      backdrop-filter: blur(1px)
+    &:nth-child(3)
+      position: absolute
+      top: 14px
+      left: 124px
+      width: 352px
+      height: 42px
+
+.dotBox
+  position: relative
+  display: inline-flex
+  margin-right: 10px
+.dot
+  position: absolute
+  top: 0
+  right: 0
+  width: 8px
+  height: 8px
+  background-color: red
+  border-radius: 4px
+
+.subTitle
+  width: 100%
+  height: 30px
+  line-height: 30px
+  text-align: center
+  color: #acdeff
+
+.drops
+  background: rgba(7, 32, 55, 0.9)
+  position: absolute
+  z-index: 30
+  right: 10px
+  top: 50px
+  border-radius: 4px
+  padding-top: 6px
+.skin
+  width: 26px
+  cursor: pointer
+  vertical-align: middle

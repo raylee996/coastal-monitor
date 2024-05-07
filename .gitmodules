@@ -1,0 +1,6 @@
+[submodule "src/hooks"]
+	path = src/hooks
+	url = ../hooks.git
+[submodule "src/webgis"]
+	path = src/webgis
+	url = ../webgis.git

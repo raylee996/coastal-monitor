@@ -1,0 +1,60 @@
+.data_center
+    .ant-empty-description
+        font-size: 12px
+    .ant-select-selector
+        border: 1px solid #00f0ff !important
+
+.rain
+    position: absolute
+    z-index: 30
+    width: 2px
+    height: 50px
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.6))
+
+.yun
+  width: 400px
+  position: absolute
+  z-index: 18
+  top:50px
+ 
+
+.yun1
+  @extend .yun
+  animation: moves 3s 
+  animation-fill-mode: forwards
+   left: 600px
+.yun1s
+  @extend .yun
+  animation: moves1 3s 
+  left: 40px
+  animation-fill-mode: forwards
+@keyframes moves1
+  0%
+    left: 40px
+  100%
+    left: 600px
+@keyframes moves
+  0%
+    left: 600px
+  100%
+    left: 40px
+.yun2
+  @extend .yun
+  animation: moves2 3s 
+  animation-fill-mode: forwards
+   left: 650px
+.yun2s
+  @extend .yun
+  animation: moves3 3s 
+  left: 1500px
+  animation-fill-mode: forwards
+@keyframes moves3
+  0%
+    left: 1500px
+  100%
+    left: 650px
+@keyframes moves2
+  0%
+    left: 650px
+  100%
+    left: 1500px

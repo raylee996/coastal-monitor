@@ -1,0 +1,332 @@
+@import 'src/themeVariable'
+@import utils
+
+.wrapper
+  position: relative
+  display: flex
+  height: 100%
+
+.videoList
+  flex: 1
+
+.content
+  position: relative
+  height: calc( 100% - 50px )
+  overflow: hidden
+  box-sizing: border-box
+  background-color: $background-color-opacity90
+
+.listSelect
+  display: flex
+  padding: 10px
+  height: 50px
+  box-sizing: border-box
+
+.selectImg
+  margin-right: 8px
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+.selectImgBox
+  flex: 1
+
+.panel
+  margin-left: 10px
+  width: 200px
+
+.listPanel
+  height: calc( 100% - 262px - 108px )
+  background-color: $background-color-opacity90
+.listPanelOnly
+  height: 100%
+  background-color: $background-color-opacity90
+
+.precast
+  margin-top: 8px
+  height: 100px
+  color: $text-color
+  background-color: $background-color-opacity90
+  user-select: none
+  >header
+    display: flex
+    height: 24px
+    padding: 0 4px
+    >div
+      flex: 1
+      line-height: 24px
+      font-size: 14px
+    .precastAdd
+      font-size: 12px
+      cursor: pointer
+  >section
+    height: calc( 100% - 24px )
+    padding: 0 4px
+    overflow-x: hidden
+    overflow-y: auto
+
+.ctrBox
+  margin-top: 8px
+  color: $text-color
+  background-color: $background-color-opacity90
+  user-select: none
+
+.step
+  padding: 0 4px
+  height: 34px
+  line-height: 34px
+  overflow: hidden
+.controlPanel
+  box-sizing: border-box
+  padding: 10px 0
+  height: 160px
+  overflow: hidden
+.optionPanel
+  height: 60px
+
+.light
+  display: flex
+  padding: 0 2px
+
+.lightBut
+  flex: 1
+  text-align: center
+  border-radius: 4px
+  cursor: pointer
+  user-select: none
+
+.lightButAct
+  @extend .lightBut
+  color: #fff
+  background-color: $background-color
+
+.actionLabel
+  display: inline-block
+  width: 44px
+  height: 24px
+  line-height: 24px
+  text-align: center
+  color: $text-color
+
+.videoBox
+  position: relative
+
+.content1
+  .videoBox
+    width: 100%
+    height: 100%
+
+.content2
+  .videoBox
+    width: 100%
+    height: 50%
+
+.content3
+  .videoBox
+    float: left
+    &:nth-child(1)
+      width: 100%
+      height: 50%
+    &:nth-child(2)
+      width: 50%
+      height: 50%
+    &:nth-child(3)
+      width: 50%
+      height: 50%
+
+.content4
+  .videoBox
+    float: left
+    width: 50%
+    height: 50%
+
+.content6Other
+  position: absolute
+  width: 33.33%
+  height: 33.33%
+
+.content6
+  .videoBox
+    &:nth-child(1)
+      width: 66.66%
+      height: 66.66%
+    &:nth-child(2)
+      top: 0
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(3)
+      top: 33.33%
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(4)
+      top: 66.66%
+      left: 0
+      @extend .content6Other
+    &:nth-child(5)
+      top: 66.66%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(6)
+      top: 66.66%
+      left: 66.66%
+      @extend .content6Other
+
+.content9
+  .videoBox
+    &:nth-child(1)
+      top: 0
+      left: 0
+      @extend .content6Other
+    &:nth-child(2)
+      top: 0
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(3)
+      top: 0
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(4)
+      top: 33.33%
+      left: 0
+      @extend .content6Other
+    &:nth-child(5)
+      top: 33.33%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(6)
+      top: 33.33%
+      left: 66.66%
+      @extend .content6Other
+    &:nth-child(7)
+      top: 66.66%
+      left: 0
+      @extend .content6Other
+    &:nth-child(8)
+      top: 66.66%
+      left: 33.33%
+      @extend .content6Other
+    &:nth-child(9)
+      top: 66.66%
+      left: 66.66%
+      @extend .content6Other
+
+.content16Other
+  position: absolute
+  width: 25%
+  height: 25%
+
+.content16
+  .videoBox
+    //第一行
+    &:nth-child(1)
+      top: 0
+      left: 0
+      @extend .content16Other
+    &:nth-child(2)
+      top: 0
+      left: 25%
+      @extend .content16Other
+    &:nth-child(3)
+      top: 0
+      left: 50%
+      @extend .content16Other
+    &:nth-child(4)
+      top: 0
+      left: 75%
+      @extend .content16Other
+    //第二行
+    &:nth-child(5)
+      top: 25%
+      left: 0
+      @extend .content16Other
+    &:nth-child(6)
+      top: 25%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(7)
+      top: 25%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(8)
+      top: 25%
+      left: 75%
+      @extend .content16Other
+    //第三行
+    &:nth-child(9)
+      top: 50%
+      left: 0
+      @extend .content16Other
+    &:nth-child(10)
+      top: 50%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(11)
+      top: 50%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(12)
+      top: 50%
+      left: 75%
+      @extend .content16Other
+    //第四行
+    &:nth-child(13)
+      top: 75%
+      left: 0
+      @extend .content16Other
+    &:nth-child(14)
+      top: 75%
+      left: 25%
+      @extend .content16Other
+    &:nth-child(15)
+      top: 75%
+      left: 50%
+      @extend .content16Other
+    &:nth-child(16)
+      top: 75%
+      left: 75%
+      @extend .content16Other
+
+.stopPatro
+  vertical-align: top
+  margin-top: 4px
+  margin-left: 4px
+
+.precastCard
+  display: flex
+  cursor: pointer
+  &:nth-child(even)
+    background-color: $background-color3
+  &:hover
+    background-color: $table-hover-background-color
+
+.precastCardTarget
+  @extend .precastCard
+  background-image: $table-selected-background-color-linear
+
+.precastName
+  @extend .textEllipsis
+  flex: 1
+  padding: 0 4px
+  font-size: 14px
+
+.precastAction
+  font-size: 14px
+  cursor: pointer
+
+.precastCheck
+  margin-right: 4px
+  font-size: 12px
+
+.stepBox
+  display: flex
+
+.stepSlider
+  flex: 1
+  margin-left: 0
+  margin-right: 0
+
+.stepInputNumber
+  margin-top: 6px
+  margin-left: 4px
+  width: 56px
+  height: 24px

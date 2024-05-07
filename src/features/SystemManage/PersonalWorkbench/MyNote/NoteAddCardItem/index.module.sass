@@ -1,0 +1,35 @@
+$cols: 5 // 列数
+$marginWidth: 10px // 间隔
+.wrapper
+  width: calc((100% - #{($cols - 1) * $marginWidth}) / #{$cols})
+  margin-top: 1%
+  background-color: #072848
+  margin-bottom: 10px
+  height: 280px
+  margin-right: 6px
+.padding_right
+  margin-right: 0px
+.title
+  background-color: #0965ba
+  color: #fff
+  height: 30px
+  line-height: 30px
+  font-weight: bold
+  padding-left: 4px
+  box-sizing: border-box
+  font-size: 14px
+.contents
+  padding-left: 10px
+  box-sizing: border-box
+  color: #a6cdff
+  font-size: 12px
+  height: 190px
+.heightBox
+  max-height: 110px
+  overflow: hidden
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 6
+  span
+    // display: inline-block
+    

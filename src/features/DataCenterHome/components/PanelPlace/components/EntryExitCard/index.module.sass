@@ -1,0 +1,65 @@
+.wrapper
+  position: relative
+  display: flex
+  align-items: center
+  margin: 8px 0
+  height: 24px
+  cursor: pointer
+
+.img
+  width: 40px
+  height: 30px
+  margin-bottom: 18px
+.name
+  flex: 1
+  font-size: 14px
+  color: #6baaff
+  margin-bottom: 20px
+.namewhite
+  flex: 1
+  font-size: 14px
+  color: transparent
+  font-weight: bolder
+  background: linear-gradient(to bottom, #35a7ff, #00f0ff)
+  background-clip: text
+  margin-bottom: 28px
+.info
+  text-align: right
+  margin-bottom: 24px
+  >span
+    &:nth-child(1)
+      margin-right: 8px
+      font-size: 18px
+      color: #fff
+    &:nth-child(2)
+      font-size: 12
+
+.in
+  @extend .info
+  >span
+    &:nth-child(2)
+      color: #007eff
+
+.out
+  @extend .info
+  margin-left: 60px
+  >span
+    &:nth-child(2)
+      color: #4ab5ff
+
+.bk
+  position: absolute
+  z-index: -1
+  bottom: 2px
+  left: 10px
+  width: 100%
+  height: 12px
+  background-image: linear-gradient(86deg,#086499,rgba(8,100,153,.18))
+.bkwhite
+  position: absolute
+  z-index: -1
+  bottom: 10px
+  left: 10px
+  width: 100%
+  height: 12px
+  background-image: linear-gradient(86deg, rgba(0, 240, 255, 0.6) 0%, rgba(239, 245, 246, 0.164) 100%)

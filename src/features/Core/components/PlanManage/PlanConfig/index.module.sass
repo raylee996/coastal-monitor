@@ -1,0 +1,76 @@
+@import "src/themeVariable"
+.wrapper,.map
+  width: 100%
+  height: 100%
+.bottom
+  width: 100%
+  position: absolute
+  z-index: 9999
+  bottom: 50px
+  display: flex
+  justify-content: center
+  button
+    margin-right: 20px
+.wrapperTitle
+  color: $text-color2
+  background: $background-color-linear
+  width: 100%
+  height: 30px
+  line-height: 30px
+  padding-left: 10px
+  font-size: 16px
+  font-weight: bold
+.formWrapper
+  position: absolute
+  right: 10px
+  bottom: 60px
+  width: 460px
+  min-height: 120px
+  height: auto
+  max-height: 600px
+  overflow: hidden
+  background: $background-color-opacity90
+  border-radius: 4px
+  z-index: 999
+  display: flex
+  flex-direction: column
+.form
+  padding: 0 20px 10px
+  flex: 1
+  overflow-y: auto
+.formItemWrapper
+  padding: 10px 50px 10px 20px
+  border-bottom: $border
+  position: relative
+.formItemBg
+  background: $background-color4
+  padding: 10px 50px 10px 20px
+  border-bottom: $border
+  margin-bottom: 6px
+  position: relative
+.formItem
+  margin-bottom: 6px!important
+.afterFont
+  margin-left: 10px
+  color: $text-color
+.title
+  color: $text-color
+  font-weight: bold
+  margin-top: 10px
+  .eventName
+    display: inline-block
+    width: 70px
+.hiddenItem
+  margin: 0
+  visibility: hidden
+  height: 0
+.closeButton
+  width: 30px
+  height: 30px
+  color: $text-color
+  position: absolute
+  right: -10px
+  top: 0
+  pointer-events: auto
+  &:hover
+    color: $text-color!important

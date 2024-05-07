@@ -1,0 +1,138 @@
+.viewerRoot
+  position: absolute
+  z-index: 9999
+  top: 0
+  left: 0
+  width: 0
+  height: 0
+
+.wrapper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.45)
+  // animation: wrapperAn .2s ease-out
+
+@keyframes wrapperAn
+  0%
+    background-color: rgba(0,0,0,.15)
+  100%
+    background-color: rgba(0,0,0,.45)
+
+@keyframes wrapperClose
+  0%
+    background-color: rgba(0,0,0,.45)
+  100%
+    background-color: rgba(0,0,0,0)
+
+.openWrapper
+  animation: wrapperAn .2s ease-out
+
+.closeWrapper
+  animation: fadenum .2s ease-out
+
+.content
+  position: absolute
+  display: flex
+  flex-direction: column
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  // animation: contentAn .2s ease-out
+
+.openAnimation
+  animation: contentAn .2s ease-out
+
+.closeAnimation
+  animation: fadenum .2s ease-out
+
+@keyframes contentAn
+  0%
+    transform: scale(0.9, 0.9)
+  100%
+    transform: scale(1, 1)
+
+@keyframes fadenum
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0)
+
+.closeViewer
+  position: absolute
+  z-index: 99
+  top: 10px
+  right: 10px
+
+.view
+  position: relative
+  z-index: 9
+  flex: 1
+  overflow: hidden
+
+.footer
+  position: relative
+  z-index: 9
+  padding: 4px
+  height: 200px
+  background-color: rgba(255, 255, 255)
+
+.imgList
+  text-align: center
+  white-space: nowrap
+  overflow-y: hidden
+  .imgItem
+    display: inline-block
+    width: 100px
+    height: 100px
+    cursor: pointer
+    margin: 0 2px
+
+.imgViewer
+  position: relative
+  width: 100%
+  height: 100%
+  text-align: center
+  cursor: pointer
+  .imageBox
+    position: relative
+    z-index: 9
+    display: inline-block
+    height: 100%
+  .mask
+    position: absolute
+    z-index: 19
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.image
+  position: relative
+  top: 0
+  left: 0
+  height: 100%
+  user-select: none
+  pointer-events: none
+  transition: transform 0.1s linear
+
+.videoList
+  text-align: center
+  white-space: nowrap
+  overflow-y: hidden
+  .videoItem
+    display: inline-block
+    width: 100px
+    height: 100px
+    cursor: pointer
+
+.videoViewer
+  position: relative
+  width: 100%
+  height: 100%
+  .videoBox
+    position: relative
+    height: 100%

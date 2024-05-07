@@ -1,0 +1,28 @@
+@import utils
+@import 'src/themeVariable'
+
+.wrapper
+  margin-left: 10px
+  overflow: hidden
+  width: 100%
+  height: 100%
+  color: $text-color
+  .ant-progress-text
+    color: $text-color!important
+  .comparsonBox
+    width: 100%
+    height: 100%
+    @extend .flexBetween
+    .progress
+      margin: 0 5%
+      text-align: center
+    .image
+      width: 60%
+  .contrastBox
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .progress
+      margin: 0 1%
+      text-align: center

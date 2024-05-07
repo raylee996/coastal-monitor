@@ -1,0 +1,239 @@
+@import "themeVariable"
+
+.App
+  width: 100%
+  height: 100%
+
+.RouterView
+  position: relative
+  width: 100%
+  height: 100%
+
+// #windowstill-root
+//   position: fixed
+//   z-index: 100
+//   top: 0
+//   left: 0
+//   width: 100%
+//   height: 0
+
+// #popup-root
+//   position: fixed
+//   z-index: 19
+//   top: 0
+//   left: 0
+//   width: 0
+//   height: 0
+
+#notification-root
+  position: fixed
+  z-index: 90
+  top: 0
+  left: 0
+  width: 100%
+  height: 0
+
+//定义滚动条高度和宽度
+::-webkit-scrollbar
+  width: 2px
+  height: 4px
+
+::-webkit-scrollbar-track
+  background: rgba(29,63 ,83 ,1 ) !important
+
+::-webkit-scrollbar-thumb
+  border-radius: 6px
+  background: rgba(45, 111, 152, 1)!important
+
+// 去掉leaflet图标
+.leaflet-control-container .leaflet-bottom .leaflet-control-attribution
+  display: none !important
+
+.leaflet-popup-ui .leaflet-popup-content
+  margin: 0
+
+.leaflet-popup-ui .leaflet-popup-content-wrapper,
+.leaflet-popup-ui .leaflet-popup-tip
+  background: $background-color-opacity70
+  backdrop-filter: blur(4px)
+
+.leaflet-popup-tooltip-ui .leaflet-popup-content
+  margin: 6px
+
+.leaflet-popup-tooltip-ui .leaflet-popup-content-wrapper,
+.leaflet-popup-tooltip-ui .leaflet-popup-tip-container
+  opacity: 0.9
+
+.leaflet-popup-tooltip-ui .leaflet-popup-content-wrapper
+  border-radius: 3px
+
+.leaflet-popup-tooltip-ui .leaflet-popup-tip-container
+  margin-top: 0px
+
+.leaflet-tooltip-ui
+  color: $text-color
+  background: $background-color-opacity70
+  backdrop-filter: blur(4px)
+  border: none
+  pointer-events: auto
+
+.leaflet-tooltip-ui-opacity20
+  color: $text-color
+  background: $background-color-opacity20!important
+  backdrop-filter: blur(4px)
+  border: none
+  pointer-events: auto
+
+.leaflet-tooltip-ui.leaflet-tooltip-top:before
+  border-top-color: $background-color2
+
+.leaflet-tooltip-ui.leaflet-tooltip-bottom:before
+  border-bottom-color: $background-color2
+
+.leaflet-tooltip-ui.leaflet-tooltip-left:before
+  border-left-color: $background-color2
+
+.leaflet-tooltip-ui.leaflet-tooltip-right:before
+  border-right-color: $background-color2
+
+.leaflet-div-icon
+  background: none
+  border: none
+
+.leaflet-control-mouseposition
+  right: 138px
+.leaflet-bottom
+  bottom: 8px
+
+// 覆盖Tabs选项卡切换组件样式，用于100%高度
+.core__tabs-content-height .ant-tabs-content,
+.core__tabs-content-height .ant-tabs-tabpane
+  height: 100%
+.core__tabs-content-height .ant-tabs-tabpane>div
+  height: 100%
+
+.img-select_content
+  max-width: 350px
+  max-height: 480px
+  overflow-y: auto
+  background: #fff
+  border: 1px solid #ccc
+  padding: 8px
+  display: inline-block
+
+  // 覆盖Descriptions描述列表组件的样式，用于紧凑展示信息
+.core__popup-descriptions .ant-descriptions-row>td,
+.core__popup-descriptions .ant-descriptions-row>th
+  padding-bottom: 0 !important
+.core__popup-descriptions .ant-descriptions-header
+  margin-bottom: 0 !important
+// select 加后默认的样式，className={`select-simple`}
+.select-simple
+  .ant-select-selector
+    background: none !important
+    border: 1px solid #1f7bca !important
+    color: #ccdbf1 !important
+  .ant-select-selection-placeholder
+    color: #ccdbf1 !important
+  .ant-select-clear
+    background: none !important
+    svg
+      fill: #fff !important
+
+// select 下拉样式
+.select-simple
+  .ant-select-selection-item
+    color: #fff !important
+  .ant-select-arrow
+    color: #fff !important
+.select-simple-popup
+  background: rgb(7, 32, 55,0.68) !important
+  border: solid 1px #59bdff
+  .ant-select-item
+    color: #a6cdff !important
+  .ant-select-item:hover,.ant-select-item-option-selected,.ant-select-item-option-active:not(.ant-select-item-option-disabled)
+    background: rgba(41, 169, 249, 0.85) !important
+    color: #fff !important
+
+// 重点场所-地图-工具箱位置
+.place_map
+  .leaflet-top
+    top: 50px !important
+
+// .core-wrapper
+//   .leaflet-top
+//     top: 136px !important
+
+// 用于Tabs组件样式覆盖，以还原设计UI
+.tabs_ui
+  .ant-tabs-nav
+    margin-bottom: 10px
+  .ant-tabs-tab
+    height: 26px
+    .ant-tabs-tab-btn
+      font-size: 14px
+      color: $text-color3
+  .ant-tabs-tab-active
+    .ant-tabs-tab-btn
+      color: $text-color2 !important
+  .ant-tabs-ink-bar
+    height: 1px !important
+    background-color: $text-color2
+  .ant-checkbox-group
+    width: 100%
+  .ant-checkbox-group-item
+    width: 33.33%
+    margin-inline-start: initial
+  .ant-checkbox-wrapper
+    margin-bottom: 10px
+  .ant-tabs-nav-list
+    transform: none !important
+
+.dropdown_ui
+  z-index: 1169
+  .ant-btn
+    color: $text-color
+  .ant-btn:hover
+    color: $text-color2 !important
+  .ant-dropdown-menu
+    background-color: $background-color-opacity90
+    backdrop-filter: blur(1px)
+  .ant-dropdown-menu-item:hover
+    background-color: $background-color !important
+
+// 地图工具样式覆盖
+.tool-ruler-tip-ui
+  padding: 8px
+  color: $text-color
+
+.tool-area-ui .leaflet-popup-content
+  color: $text-color
+  padding: 8px 4px
+
+.tool-text-textarea-ui
+  color: $text-color
+  background-color: initial
+
+.tool-text-only-ui
+  color: $text-color
+
+.leaflet-popup-text-ui .leaflet-popup-content
+  color: $text-color
+
+.img-preview-face .ant-image-preview-img-wrapper .ant-image-preview-img
+  min-width: 15%
+
+// table点击或勾选选中样式
+.table__selected__style
+  .ant-table-row-selected
+    background: linear-gradient(to right, rgb(90 119 145), rgb(19, 59, 104)) !important
+  .ant-table-row-selected-click
+    background: $table-selected-background-color-linear !important
+    color: $text-color2 !important
+    border-radius: 0 !important
+
+.jessibuca-zoom-controls
+  display: none !important
+
+.jessibuca-recording
+  display: none !important

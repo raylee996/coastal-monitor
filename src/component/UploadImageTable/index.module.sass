@@ -1,0 +1,32 @@
+@import utils
+@import "themeVariable"
+
+.wrapper
+  width: 100%
+  font-weight: normal
+  .top
+    @extend .flexBetween
+    margin-bottom: 10px
+    color: #fff
+    .msg
+      display: inline-block
+      margin-left: 10px
+      color: $text-color
+  .content
+    display: flex
+
+.wrapperItem
+  box-sizing: border-box
+  width: 10%
+  height: 100%
+  padding-right: 10px
+  text-align: center
+  color: $text-color
+  .image
+    width: 100%
+    height: 100%
+  .time
+    @extend .textEllipsis
+  .button
+    color: #ff7875
+    cursor: pointer

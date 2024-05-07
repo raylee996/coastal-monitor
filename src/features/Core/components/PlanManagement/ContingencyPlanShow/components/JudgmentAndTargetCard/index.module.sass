@@ -1,0 +1,49 @@
+.wrapper
+    width: 100%
+    display: flex
+    flex-direction: column
+    margin-bottom: 6px
+    .commonBg
+        width: 100%
+        background-size: 100% 100%
+        background-repeat: no-repeat
+    .topBg
+        @extend .commonBg
+        height: 10px
+        background-image: url(~images/core/planManagement/box_top.png)
+    .bottomBg
+        @extend .commonBg
+        height: 10px
+        background-image: url(~images/core/planManagement/box_bottom.png)
+    .content
+        @extend .commonBg
+        flex: 1
+        padding: 0 10px
+        box-sizing: border-box
+        background-image: url(~images/core/planManagement/box_content.png)
+        .btnBox
+            display: flex
+            justify-content: space-between
+        .splitLine
+            border-bottom: 1px #a6cdff dashed
+        .main
+            margin-top: 6px
+            .main_lable
+                display: flex
+                justify-content: space-between
+                .lable
+                    font-size: 15px
+                    color: #fff
+                .btn
+                    cursor: pointer
+            .main_content
+                transition: height 2s
+                .main_text
+                    color: transparent
+                    background: linear-gradient(to bottom, #fff 0%, #59bdff 100%)
+                    -webkit-background-clip: text
+                    background-clip: text
+        .bottomLine
+            width: 100%
+            height: 10px
+            background-image: url(~images/commonBox/default_line.png)

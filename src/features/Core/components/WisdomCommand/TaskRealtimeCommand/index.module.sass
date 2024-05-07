@@ -1,0 +1,127 @@
+@import utils
+@import "themeVariable"
+
+.margin_btm
+  padding-bottom: 40px
+
+.wrapper
+  height: 100%
+  box-sizing: border-box
+  position: relative
+  font-size: 12px
+  .tabs
+    display: flex
+    text-align: center
+    line-height: 24px
+    .tabItem
+      width: 16.785%
+      .tabLabel
+        font-size: 14px
+        display: inline-block
+        padding-bottom: 4px
+      .active
+        border-bottom: 1px solid #fff
+        color: #fff
+  .btnBox
+    padding-top: 12px
+    padding-left: 10px
+  .trackBox
+    margin: 12px 0
+    padding-left: 10px
+    height: 35% !important
+  .contentBox
+    height: 56%
+    display: flex
+    flex-direction: column
+  .relationBox
+    @extend .trackBox
+  .infoBox
+    @extend .flexBetween
+    flex-wrap: wrap
+    height: 100%
+    overflow-y: auto
+    .info
+      width: 49%
+      height: 100%
+      padding: 10px
+      margin-bottom: 6px
+      box-sizing: border-box
+      line-height: 24px
+      background-image: url(~images/core/entryExitRecords/even.png)
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      .shipImg
+        width: 100%
+        height: 66%
+        cursor: pointer
+        border: solid 1px #0a6eab
+        background-color: #080f21
+        padding: 1px
+        margin-bottom: 4%
+        box-sizing: border-box
+      .name
+        color: #fff
+      .relationImg
+        @extend .shipImg
+        height: calc(100% - 30px)
+      .bottomTextBox
+        @extend .flexBetween
+  .trackingBox
+    display: flex
+    padding: 6px 0 6px 10px
+    .label
+      width: 5em
+      line-height: 32px
+  .content
+    flex: 1
+    overflow-y: auto
+    line-height: 30px
+    .analysisBox
+      padding: 0 10px
+    .tableBox
+      padding-top: 10px
+      padding-left: 10px
+      text-align: center
+      /** 类table样式 */
+      .rowCommon
+        background-color: rgba(14,55,110, .6)
+      .rowTowCommon
+        background-color: #0b2c4f
+      .labelRow
+        color: #fff
+        background-color: #0b579d
+  .bottomBtn
+    text-align: center
+
+.first_bg
+  background-repeat: no-repeat
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/firstActive.png)
+.second_bg
+  background-repeat: no-repeat
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/secondActive.png)
+.third_bg
+  background-repeat: no-repeat
+  background-size: 100% 160%
+  background-image: url(~images/core/entryExitRecords/thirdActive.png)
+
+.track_bg
+  @extend .first_bg
+  background-size: 100% 90%
+.relation_bg
+  @extend .second_bg
+  background-size: 100% 90%
+
+.infoWrapper
+  border: 1px solid rgba(1, 241, 247, 1)
+  background-image: radial-gradient(rgba(1, 241, 247, 0), rgba(1, 241, 247, .36))
+  font-size: 12px
+  color: #00f4fa
+  padding: 10px
+  min-width: 200px
+  box-sizing: border-box
+
+.viewGallery
+  padding-left: 10px
+  color: $text-color

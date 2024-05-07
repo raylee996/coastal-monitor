@@ -1,0 +1,51 @@
+.headerWrapper
+  position: relative
+  margin-left: 10px
+  margin-right: 10px
+  margin-top: 20px
+  height: 42px
+
+.headerContent
+  position: relative
+  z-index: 6
+  height: 40px
+  line-height: 42px
+  cursor: move
+  user-select: none
+  display: flex
+  justify-content: space-between
+  .winTitle
+    display: flex
+    overflow: hidden
+    align-items: center
+    img
+      width: 28px
+      height: 30px
+      margin: 0 4px
+      vertical-align: middle
+    >span
+      flex: 1
+      font-size: 16px
+      font-weight: bolder
+      background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+  .closeBtn
+    width: 40px
+    height: 40px
+    line-height: 40px
+    font-size: 24px 
+    color: #59bdff
+    text-align: center
+    cursor: pointer
+    user-select: none
+    &:hover
+      font-size: 26px 
+
+.contentWrapper
+  padding: 10px
+  height: calc( 100% - 62px )
+  box-sizing: border-box

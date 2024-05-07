@@ -1,0 +1,128 @@
+.wrapper
+  position: absolute
+  z-index: 1000
+  left: 0
+  width: 100vw
+  height: 100vw
+  animation: wrapperAn .1s ease-out
+  background-color: rgba(0, 0, 0, 0.5)
+
+@keyframes wrapperAn
+  0%
+    background-color: rgba(0, 0, 0, 0)
+  100%
+    background-color: rgba(0, 0, 0, 0.5)
+
+.content
+  position: absolute
+  border-radius: 10px
+  animation: contentAn .1s ease-out
+
+@keyframes contentAn
+  0%
+    transform: scale(0.95, 0.95)
+  100%
+    transform: scale(1, 1)
+
+.contentFullscreen
+  @extend .content
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  border-radius: 0
+
+.contentLarge
+  @extend .content
+  top: 5vh
+  left: 5vw
+  width: 90vw
+  height: 90vh
+
+.contentMiddle
+  @extend .content
+  top: 15vh
+  left: 15vw
+  width: 70vw
+  height: 70vh
+
+.contentSmall
+  @extend .content
+  top: 20vh
+  left: 25vw
+  width: 50vw
+  height: 50vh
+
+.contentMini
+  @extend .content
+  top: 25vh
+  left: 35vw
+  width: 30vw
+  height: 30vh
+
+.contentAuto
+  @extend .content
+  left: 50vw
+  top: 50vh
+  animation: contentAutoAn .1s ease-out
+  transform: translate(-50%, -50%)
+  height: auto
+
+@keyframes contentAutoAn
+  0%
+    transform: translate(-50%, -50%) scale(0.95, 0.95)
+  100%
+    transform: translate(-50%, -50%) scale(1, 1)
+
+.header
+  position: relative
+  z-index: 9
+  margin-top: 20px
+  margin-left: 10px
+  margin-right: 10px
+  height: 40px
+  line-height: 42px
+  box-sizing: border-box
+  .off
+    float: right
+    width: 40px
+    height: 40px
+    line-height: 32px
+    font-size: 16px
+    color: #59bdff
+    text-align: center
+    cursor: pointer
+    user-select: none
+    &:hover
+      color: #59bdff
+
+.title
+  flex: 1
+  text-indent: 10px
+  font-weight: 500
+  color: #333
+  text-align: left
+  font-size: 16px
+
+.closeButton
+  width: 40px !important
+  height: 40px !important
+
+.body
+  display: inline-block
+  width: 100%
+  height: calc( 100% - 40px )
+  // background-color: rgba(7,32,55,0.9)
+
+.headerContent
+  position: relative
+  z-index: 6
+  >img
+    margin: 0 4px
+    vertical-align: middle
+  >span
+    font-size: 16px
+    font-weight: bolder
+    background-image: -webkit-linear-gradient(bottom, #59bdff, #ffffff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent

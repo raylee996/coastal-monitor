@@ -1,0 +1,69 @@
+@import "themeVariable"
+
+.wrapper
+  position: relative
+  width: 100%
+  height: 100%
+
+.imgBox
+  width: 100%
+  height: 100%
+
+.iconBox
+  position: absolute
+  top: calc(50%)
+  left: calc(50%)
+  transform: translate(-50%, -50%)
+
+.icon
+  font-size: 28px
+  color: $text-color
+
+.closeAlt
+  position: absolute
+  z-index: 9
+  top: 8px
+  left: 8px
+  padding: 4px 8px
+  font-size: 18px
+  color: #fff
+  opacity: 0
+  background-color: rgb(0 0 0 / 50%)
+  user-select: none
+  animation: closeAltAn 1s forwards 4s
+
+@keyframes closeAltAn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.videoBox
+  position: relative
+  width: 100%
+  height: 100%
+
+.videoBoxHide
+  @extend .videoBox
+  display: none
+
+.video
+  width: 100%
+  height: 100%
+
+.loading
+  position: absolute
+  top: 30%
+  left: 50%
+  transform: translateX(-50%)
+
+.progressBox
+  position: absolute
+  display: flex
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 50px
+
+.progress
+  flex: 1

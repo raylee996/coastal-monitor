@@ -1,0 +1,70 @@
+@import utils
+
+.wrapper
+  padding: 10px
+  height: 100%
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  .top
+    @extend .flexBetween
+    align-items: stretch
+    .num
+      width: 60%
+      .numBox
+        width: 100%
+        padding: 36px 20px
+        .numBorder
+          border-right: 1px solid rgb(91, 135, 168)
+        .numItem
+          width: 92%
+          margin-left: 6%
+          display: flex
+          flex-direction: column
+          align-items: center
+          background-image: url(~images/core/entryExitRecords/wharf.png)
+          background-size: 100% 100%
+          background-repeat: no-repeat
+          .box
+            padding-left: 30%
+            width: 70%
+            cursor: pointer
+            .numLabel
+              @extend .textEllipsis
+              line-height: 36px
+              font-size: 18px
+              font-weight: bold
+              background: linear-gradient(to bottom, #fff 0%, #59bdff 100%)
+              -webkit-background-clip: text
+              color: transparent
+              cursor: pointer
+            .numContent
+              @extend .flexBetween
+              .entryExit
+                width: 50%
+                display: flex
+                text-align: center
+                .numStyle
+                  margin: 8px 12px 8px 0
+                  line-height: 40px
+                  font-size: 26px
+                  color: #fff
+                  font-weight: bold
+                .labelStyle
+                  @extend .textEllipsis
+                  margin-top: 8px
+                  font-size: 16px
+                  line-height: 40px
+                  color: #28e29a
+                .outerNumColor
+                  color: #4ab5ff
+                .outerLabelColor
+                  color: #ffa810
+
+    .line
+      width: 39%
+      .linebox
+        height: 180px
+  .content
+    flex: 1
+    overflow-y: auto

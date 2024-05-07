@@ -1,0 +1,63 @@
+@import "src/themeVariable"
+.wrapper
+  position: relative
+  width: 100%
+  height: 100%
+
+.mapBox
+  position: relative
+  width: 100%
+  height: 100%
+  .map
+    position: relative
+    z-index: 9
+    width: 100%
+    height: 100%
+
+.tableBox
+  position: absolute
+  z-index: 19
+  top: 10px
+  left: 10px
+  padding: 4px
+  width: 368px
+  background-color: $background-color-opacity90
+
+.addPanel
+  position: absolute
+  z-index: 19
+  top: 10px
+  right: 60px
+  padding: 4px 8px
+  background-color: $background-color-opacity90
+  color: $text-color
+
+.myIcon
+  width: 30px!important
+  height: 20px!important
+  line-height: 20px
+  color: #ffffff
+  background: green
+  display: inline-block
+  text-align: center
+.deviceListWapper
+  background-color: $background-color-opacity90
+  min-width: 60px
+  height: 30px
+  line-height: 30px
+  position: absolute
+  right: 10px
+  top: 180px
+  z-index: 20
+  padding: 0 10px
+  border-radius: 4px
+  box-sizing: border-box
+  color: $text-color
+  cursor: pointer
+  font-size: 14px
+.devicePopup
+  color: $text-color
+  font-size: 14px
+  padding: 10px
+  p
+    margin: 4px 

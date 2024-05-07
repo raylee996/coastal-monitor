@@ -1,0 +1,57 @@
+@import "themeVariable"
+
+.wrapper
+  position: relative
+  height: 100%
+
+.map
+  position: relative
+  z-index: 9
+  height: 100%
+
+.infoWrapper
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 12px
+  color: #fff
+  padding: 0 4px
+  min-width: 300px
+  height: 78px
+  box-sizing: border-box
+
+.infoWrapperLow
+  @extend .infoWrapper
+  background-image: url(~images/popup/mapWarn/low.png)
+
+.infoWrapperMiddle
+  @extend .infoWrapper
+  background-image: url(~images/popup/mapWarn/middle.png)
+
+.infoWrapperHigh
+  @extend .infoWrapper
+  background-image: url(~images/popup/mapWarn/high.png)
+
+.videoPanel
+  position: absolute
+  z-index: 19
+  top: 16px
+  right: 16px
+
+.title
+  height: 32px
+  line-height: 32px
+  font-size: 14px
+  color: #ffffff
+  text-indent: 8px
+  background-image: $background-color-linear
+
+.videoBox
+  width: 300px
+  height: 260px
+  background-color: #eeeeee
+
+.videoPanelUav
+  position: absolute
+  z-index: 19
+  top: 320px
+  right: 16px

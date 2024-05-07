@@ -1,0 +1,190 @@
+// 档案-tabs样式
+.dc-tabs-card>.ant-tabs-nav
+
+    .ant-tabs-tab
+        padding: 14px 40px 8px 40px!important
+    &::before
+        border-bottom: 2px solid
+        border-image: linear-gradient(90deg, rgba(89, 189, 255, 1) 0%, rgba(89, 189, 255, 0) 100%) 2 2 2 2
+    .ant-tabs-tab-active,.ant-tabs-tab
+        background: none !important
+        border-bottom: none !important
+        border-radius: 4px 4px 0 0
+        padding: 14px 40px 8px 40px!important
+    .ant-tabs-tab
+        // border: 1px solid #06233e
+        border: 0px solid #59bdff !important
+        .ant-tabs-tab-btn
+            padding-bottom: 8px
+            border-bottom: 1px solid #06233e
+    .ant-tabs-tab-btn:active
+        color: #9cc1f0 !important
+    .ant-tabs-tab-active
+        border: 1px solid #59bdff !important
+        border-bottom: 1px solid #06233e !important
+        .ant-tabs-tab-btn
+            color: #fff !important
+            padding-bottom: 8px
+            border-bottom: 1px solid #fff !important
+            box-sizing: border-box
+
+    .ant-tabs-tab:hover
+        color: #fff !important
+    .ant-tabs-ink-bar
+        background: rgba(89, 189, 255, 1) !important
+.dc-tabs-card>.ant-tabs-content-holder
+    box-sizing: border-box
+    position: relative !important
+    padding: 4px
+    &::before
+        position: absolute
+        top: 143px
+        transform: translatey(-40%)
+        left: 0px
+        content: ''
+        width: 1px
+        height: 400px
+        background-image: linear-gradient(to bottom, rgba(89, 189, 255, 1) , rgba(89, 189, 255, 0))
+
+// 档案--menus
+.dc-menus
+    // background: #082a48
+    // background: transparent !important
+    // .ant-menu-title-content
+    //     color: #fff
+    // .ant-menu-item
+    //     width: 100% !important
+    //     height: 50px !important
+    //     line-height: 50px !important
+    //     background: rgba(5, 54, 101, 0.9)
+    //     margin: 0 !important
+    //     border-radius: 0 !important
+    //     transition: 0.3s
+    //     .iconfont
+    //         color: #59bdff
+    // .ant-menu-item-selected
+    //     height: 80px !important
+    //     line-height: 80px !important
+    //     background: none !important
+    //     background-image: url("../../images/dataCenter/menu_btn.png") !important
+    //     background-size: 100% 100% !important
+    //     background-repeat: no-repeat
+    background: linear-gradient(180deg,#053564 ,#082846 )
+    border-radius: 8px
+    height: 100%
+    // margin-left: 20px
+    padding-top: 20px
+    box-sizing: border-box
+    text-align: left
+    padding-left: 10px
+// 档案描述组件
+.dc-data-desc
+    .ant-descriptions-item-label
+        text-align: right
+        background-color: #0b579d !important
+        color: #fff
+        padding: 13px 8px !important
+        width: 160px !important
+
+    .ant-descriptions-item-label span::after
+        content: ' :'
+    .ant-descriptions-item-content
+        background-color: rgba(18, 70, 123, 0.38) !important
+
+// 档案折叠面板
+.dc-collapse
+    .collapse-title
+        background: #0b579d
+        color: #fff
+    .ant-collapse-content-box
+        color: #a6cdff
+
+// 档案-form
+.dc-form
+    .unit
+        color: #fff
+    .ant-form-item-label label
+        color: #fff !important
+    .ant-input-number
+        border-color: #fff !important
+        .ant-input-number-input
+            color: #fff !important
+        .ant-input-number-handler-wrap
+            background-color: rgba(166, 205, 255, 0.9) !important
+    // 时间选择器
+    .ant-picker
+        border-color: #fff !important
+        .ant-picker-separator,.ant-picker-suffix,.ant-picker-input > input
+            color: #fff !important
+            &::placeholder
+                color: #fff !important
+    // 下拉
+    .ant-select-selector
+        border-color: #fff !important
+        .ant-select-selection-item,.ant-select-selection-search-input,.ant-select-selection-placeholder
+            color: #fff !important
+    .ant-select .ant-select-arrow, .ant-select .ant-select-clear
+        color: #fff !important
+        background: none !important
+
+    // radio
+    .ant-radio-group
+        .ant-radio-wrapper
+            color: #fff !important
+        .ant-radio-inner
+            border-color: #fff !important
+.dc-tooltip
+    .ant-tooltip
+        .ant-tooltip-inner
+            background: red !important
+/* 档案的公共样式 */
+
+// 页面标题
+.subTitle
+    padding: 8px 10px
+    background: #0b579d
+    color: #fff
+    margin-bottom: 16px
+    font-size: 14px
+// 页面标题ICON
+.titleIconFont
+    display: inline-block
+    padding: 0 8px 0 0
+    color: #59bdff
+    font-size: 12px
+
+// 页面标题01 背景为黑色透明
+.subTitle01
+    position: relative
+    padding: 8px 10px
+    background: rgba(0,0,0,0.58)
+    color: #fff
+    margin-bottom: 16px
+    height: 38px
+    box-sizing: border-box
+    font-size: 14px
+    .titleL
+        position: absolute
+        left: 8px
+    .titleR
+        position: absolute
+        right: 8px
+.titleIcon1
+    display: inline-block
+    padding: 0 8px 0 0
+    color: #00f0fe
+    font-size: 12px
+
+// 页面标题
+.subTitle03
+    padding: 8px 10px
+    background: none
+    color: #fff
+    // margin-bottom: 16px
+    font-size: 14px
+// 页面标题ICON
+.titleIconFont
+    display: inline-block
+    padding: 0 8px 0 0
+    color: #59bdff
+    font-size: 12px

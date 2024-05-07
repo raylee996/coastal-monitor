@@ -1,0 +1,47 @@
+.wrapper
+  position: absolute
+  z-index: 99999
+  min-width: 32px
+  min-height: 32px
+  border-radius: 4px
+  background-color: #0b2c4f
+  user-select: none
+  transition: 0.3s
+  .panel
+    height: 100%
+    display: flex
+    flex-direction: column
+    .head
+      font-size: 12px
+      font-weight: 6000
+      height: 32px
+      line-height: 32px
+      padding-left: 8px
+            // background: #fff
+      cursor: pointer
+      font-family: MicrosoftYaHei-Bold
+      background-image: linear-gradient(90deg, #1460b5 18%, rgba(20, 96, 181, 0.14) 100%)
+      box-shadow: 0px 1px 2px 0px #07223e
+      .btnBox
+        position: absolute
+        right: 0
+        top: 0
+        .btns
+          display: inline-block
+          padding: 0 8px 0 4px
+          line-height: 32px
+          font-size: 12px
+          cursor: pointer
+    .content
+      width: 100%
+      overflow-y: auto
+  .btnShrink
+    display: inline-block
+    width: 32px
+    height: 32px
+    line-height: 32px
+    text-align: center
+    cursor: pointer
+    .btnShrinkIcon
+      font-size: 24px
+      color: #1677ff

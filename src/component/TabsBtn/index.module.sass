@@ -1,0 +1,114 @@
+.wrapper
+    position: relative
+    width: 100%
+    height: 90px
+    .tabsBtnBox
+        display: flex
+        justify-content: center
+        align-items: center
+        .btnActive
+            color: red
+            font-weight: 600
+            transform: scale(1.05)
+            transition: 0.3s
+
+        .btn
+            text-align: center
+            flex: 1
+            color: #fff
+            transition: 0.3s
+        .btnImg
+            position: relative
+            display: inline-block
+            min-width: 210px
+            min-height: 88px
+            background-size: 100% 100%
+            background-repeat: no-repeat
+            cursor: pointer
+            user-select: none
+            .itemName
+                position: absolute
+                right: 14px
+                top: 16px
+                width: 90px
+                text-align: left
+                color: #a6cdff
+                font-size: 14px
+            .itemTotal
+                position: absolute
+                right: 14px
+                top: 36px
+                font-size: 16px
+                font-weight: 600
+                width: 90px
+                color: #00f0fe
+                text-align: left
+                font-family: "Microsoft YaHei"
+        .btnImgCommon
+            background-image: url('../../images/dataCenter/center_ship.png')
+        // 船舶档案TABS按钮背景
+        .btnImgShipTypeCommon
+            // background-image: url('../../images/dataCenter/ship_type_common.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgShipTypeFocus
+            // background-image: url('../../images/dataCenter/ship_type_focus.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgShipTypeImportant
+            // background-image: url('../../images/dataCenter/ship_type_important.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgShipTypeNanShan
+            // background-image: url('../../images/dataCenter/ship_type_nanshan.jpg')
+            background-image: url('../../images/dataCenter/center_ship.png')
+
+        // 人员档案TABS按钮背景
+        .btnImgPersonTypeCommon
+            // background-image: url('../../images/dataCenter/person_type_common.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgPersonTypeFocus
+            // background-image: url('../../images/dataCenter/person_type_focus.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgPersonTypeImportant
+            // background-image: url('../../images/dataCenter/person_type_important.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+
+        // 车辆档案TABS按钮背景
+        .btnImgCarTypeCommon
+            // background-image: url('../../images/dataCenter/car_type_common.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgCarTypeFocus
+            // background-image: url('../../images/dataCenter/car_type_focus.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+        .btnImgCarTypeImportant
+            // background-image: url('../../images/dataCenter/car_type_important.png')
+            background-image: url('../../images/dataCenter/center_ship.png')
+.contents
+    position: relative
+.topsvg
+    width: 50px
+    position: absolute
+    // left: 30.3%
+    z-index: 9
+    >img
+        // width: 32px
+        height: 32px
+        margin-top: 10px
+.toptree
+    width: 50px
+    position: absolute
+    left: 35.1%
+    z-index: 9
+    margin-top: 4px
+    >img
+        width: 28px
+        height: 28px
+        margin-top: 10px
+.toptrees
+    width: 50px
+    position: absolute
+    left: 35.1%
+    z-index: 9
+    margin-top: 4px
+    >img
+        // width: 32px
+        height: 20px
+        margin-top: 16px

@@ -1,0 +1,36 @@
+@import "src/themeVariable"
+.wrapper
+  width: 100%
+  height: 100%
+  position: relative
+.topSteps
+  width: 500px
+  display: flex
+  justify-content: center
+  position: absolute
+  top: 20px
+  margin-left: 50%
+  transform: translateX(-50%)
+  z-index: 9999
+  div
+    width: 150px
+    height: 54px
+    display: flex
+    justify-content: center
+    align-items: center
+  .circle
+    width: 150px
+    height: 54px
+    cursor: pointer
+    background-image: url("../../../../../images/planManage/planManageBg.png")
+    background-size: 100% 100%
+    color: $text-color
+    span
+      color: #59bdff
+      margin-left: 20px
+  .active
+    background-image: url("../../../../../images/planManage/planManageActive.png")
+    color: $text-color2
+    span
+      color: #00feff
+      margin-left: 20px

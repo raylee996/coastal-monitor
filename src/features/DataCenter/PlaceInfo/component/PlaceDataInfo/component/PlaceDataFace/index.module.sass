@@ -1,0 +1,50 @@
+.wrapper
+    position: relative
+    width: 100%
+    height: 100%
+
+.pdcarItems
+    margin: 8px
+    // border: 1px solid #ccc
+    background-color: rgba(6, 49, 88,0.8)
+    border-radius: 4px
+    transition: 0.3s
+    padding: 4px
+    display: inline-flex
+    .boxL
+        margin-right: 8px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        padding-left: 4px
+        .imgs
+            margin-bottom: 4px
+            .img
+                border-radius: 4px
+                width: 80px
+                height: 80px
+    .boxR
+        width: 260px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .infoRow
+            padding: 4px 0
+            .infoCol
+                padding: 4px 0
+                display: inline-flex
+                flex-wrap: wrap
+                .infoIcon
+                    display: inline-block
+                    text-align: center
+                    min-width: 40px
+                    margin-right: 8px
+                    height: 24px
+                    background-color: #59bdff
+                    border-radius: 3px
+        .siteRow
+            padding: 8px 4px 4px 0
+            .siteCol
+                color: #a6cdff
+.pdcarItems:hover
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)

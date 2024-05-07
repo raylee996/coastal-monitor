@@ -1,0 +1,30 @@
+.hooks__tableComponent .ant-spin-nested-loading,
+.hooks__tableComponent .ant-spin-container,
+.hooks__tableComponent .ant-table,
+.hooks__tableComponent .ant-table-container {
+  height: 100%;
+}
+
+.hooks__tableComponent .ant-table-body {
+  max-height: calc(100% - 55px) !important;
+  overflow-y: auto !important;
+}
+
+.hooks__tableComponent .ant-table-small .ant-table-body {
+  max-height: calc(100% - 39px) !important;
+  overflow-y: auto !important;
+}
+
+.addRadioStyle,
+.addRadioStyle:hover {
+  background: #e6f4ff !important;
+  border-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.addRadioStyle .ant-table-tbody tr.ant-table-row-selected:hover td {
+  background: #e6f4ff !important;
+}
+
+.ant-table-row-selected.cancelCheckboxStyle .ant-table-cell {
+  background-color: transparent !important;
+}

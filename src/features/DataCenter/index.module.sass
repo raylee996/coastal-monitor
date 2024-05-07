@@ -1,0 +1,40 @@
+.wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    background: #081c34
+
+    .wrapperContent
+        position: absolute
+        top: 60px
+        // z-index: 300
+        background: rgba(18, 45, 75, 0)
+        width: 100%
+        height: calc( 100% - 60px )
+        display: flex
+        padding-left: 20px
+        box-sizing: border-box
+        .menu
+            width: 200px
+            // display: flex
+            // flex-direction: column
+            // width: 200px
+            // box-sizing: border-box
+            // padding: 0 0px 0 0
+            // text-align: right
+        .content
+            flex: 1
+            padding: 10px
+            overflow: hidden
+    .menulist
+        background: #073055
+        border-radius: 8px
+        height: 100%
+        margin-left: 20px
+        padding-top: 20px
+        box-sizing: border-box
+        padding-left: 10px
+    .itemBottom
+        flex: 1 1 auto
+        height: 100%
+        background: rgba(5, 54, 101, 0.9)

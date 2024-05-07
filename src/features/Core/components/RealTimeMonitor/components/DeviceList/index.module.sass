@@ -1,0 +1,60 @@
+@import 'src/themeVariable'
+@import utils
+
+.wrapper
+  position: relative
+  height: 100%
+  >header
+    padding: 0 4px
+  >section
+    height: calc( 100% - 84px )
+    overflow: auto
+
+.search
+  margin-bottom: 4px
+
+.selectBox
+  display: flex
+  margin-bottom: 4px
+  >span
+    padding-right: 4px
+    font-size: 12px
+    line-height: 24px
+
+.selectWrapper
+  flex: 1
+
+.select
+  width: 100%
+
+.item
+  display: flex
+  width: 100%
+  height: 30px
+  line-height: 30px
+  cursor: pointer
+  user-select: none
+  &:nth-child(even)
+    background-color: $background-color3
+  &:hover
+    background-color: $table-hover-background-color
+
+.itemTarget
+  @extend .item
+  background-image: $table-selected-background-color-linear
+
+.itemName
+  flex: 1
+
+.itemIcon
+  width: 30px
+  text-align: center
+
+.itemNotUrlIcon
+  @extend .itemIcon
+  color: red
+
+.deviceName
+  @extend .textEllipsis
+  flex: 1
+  text-indent: 8px

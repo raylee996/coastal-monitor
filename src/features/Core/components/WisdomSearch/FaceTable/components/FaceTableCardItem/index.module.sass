@@ -1,0 +1,66 @@
+$cols: 3 // 列数
+$marginWidth: 10px // 间隔
+$mainColor: #409eff
+
+@import utils
+
+.wrapper
+  width: calc((100% - #{($cols - 1) * $marginWidth}) / #{$cols})
+  height: 30%
+  box-sizing: border-box
+  font-size: 14px
+  margin-bottom: 10px
+  margin-right: $marginWidth
+  padding: 3px 5px
+  // border-radius: 5px
+  // box-shadow: 10px 10px 10px rgba(0, 0, 0, .2)
+  // border: 1px solid #eee
+  background-color: rgba(10, 45, 80, 1)
+  color: #a6cdff
+  display: flex
+  .imgBox
+    width: 50%
+    .imgFlex
+      width: 100%
+      .image1
+        float: left
+        width: 64px
+        height: 100px
+        margin-left: 10px
+      .image2
+        float: left  
+        width: 120px
+        height: 100px
+        
+  .content
+    width: 50%
+    height: 100%
+    padding: 10px 0 10px 20px
+    box-sizing: border-box
+    .contentTop
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      // .image
+      //   width: 30%
+      //   margin-right: 3%
+      //   cursor: pointer
+      .icon
+        margin: 0 2px
+        padding: 0 4px
+        margin-bottom: 6px
+        background-color: #59bdff
+        color: #000
+        border-radius: 4px
+        .iconStyle
+          font-size: 20px
+      .iconContentHeight
+        height: 20%
+      .iconItemHeight
+        height: 24px
+    .text
+      @extend .textEllipsis
+
+.delMarginLeft
+  margin-right: 0
